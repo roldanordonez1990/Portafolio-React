@@ -6,7 +6,7 @@ export const HeaderNav = () => {
     <>
       <header className="header">
           <Link to="/inicio">
-            <img src="/images/logo.png" alt="logo"/>
+            <img src="/images/logo.svg" alt="logo"/>
           </Link>
           <input id="toggle" type="checkbox"/>
           <label id="burger" for="toggle"><i className="fas fa-bars"></i></label>
@@ -32,7 +32,7 @@ export const HeaderNav = () => {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? "activado" : "")}
-                to="/about"
+                to="/servicios"
               >
                 <strong>SERVICIOS</strong>
               </NavLink>
@@ -55,6 +55,9 @@ export const HeaderNav = () => {
             </li>
           </ul>
         </nav>
+        <Link to="/inicio">
+          <img id="logo2" src="/images/logo.svg" alt="logo"/>
+        </Link>
       </header>
       <hr className='separador1'/>
     </>

@@ -13,7 +13,6 @@ body{
 }
 
 /*Con flex-grow a 1 damos el mismo espacio a ambos, logo y nav*/
-.header .logo,
 .header nav{
     flex-grow:1; 
 }
@@ -22,7 +21,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    line-height: 200px;
+    line-height: 270px;
+    margin-top: -48px;
 }
 
 .header nav ul{
@@ -52,17 +52,19 @@ body{
 /*Hacemos que el menú hamburguesa se oculte*/
 #toggle,
 header #burger,
-header #close{
+header #close,
+#logo2{
     display: none;
 }
 
 .header img{
-  margin-top: -159px;
-  margin-left: -173px;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: -53px;
 }
 
 .separador1{
-    margin-top: -160px;
+    margin-top: -100px;
     border-top: 2px solid black;
 }
 
@@ -98,7 +100,7 @@ h2 .name{
 }
 
 .boxs h2{
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .cards{
@@ -115,6 +117,7 @@ h2 .name{
     height: 150px;
     background-color: #f5f5f5;
     flex-grow: 1;
+    margin-bottom: -15px;
     border-radius: 25px;
     transition: all 600ms;
 }
@@ -129,7 +132,7 @@ h2 .name{
 }
 
 .card a:hover{
-    transform: scale(1.5, 1.5);
+    transform: scale(1.3, 1.3);
     color: #ab8616; 
 }
 
@@ -152,14 +155,12 @@ h2 .name{
     margin-right: 30px;
     margin-bottom: 40px;
     margin-top: 10px;
-    flex-wrap: wrap;
     flex-grow: 1;
     box-shadow: 0px 2px 10px #b8b8b8;
     transition: all 500ms;
 }
 
 .items .item-mask{
-    flex: 1 1;
     overflow: hidden;
     /*Esto hace que no sobresalga nada de la máscara. Por eso al aumentar la img hace zoom sin salir*/
 }
@@ -202,13 +203,15 @@ h2 .name{
 
 .titulo-boxs{
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
+    text-decoration: underline;
     margin-bottom: -55px;
 }
 
 .titulo-proyects{
     text-align: center;
-    margin-top: -20px;
+    text-decoration: underline;
+    margin-top: -18px;
     margin-bottom: 37px;
 }
 
@@ -216,6 +219,17 @@ h2 .name{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 37px;
+}
+
+.exp-box .item-mask,
+.exp-box .item-mask1{
+  margin-bottom: 10px;
+}
+
+.box2 img{
+  width: 450px;
+  margin-top: 15px;
+  margin-left: 25px;
 }
 
 .texto-box1,
@@ -242,6 +256,24 @@ h2 .name{
     color: #b8b8b8;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+
+.experiencia-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+  gap: 50px;
+}
+
+.exp-box{
+  flex-grow: 1 1;
+  text-align: center;
+}
+
+.hr-exp{
+  display: none;
 }
 
 .footer{
@@ -327,6 +359,8 @@ h2 .name{
 
 .correo-personal{
   font-style: oblique;
+  text-decoration: none;
+  color: gray;
 }
 
 .contactBody{    
@@ -621,12 +655,26 @@ h2 .name{
     }
   }
 
-
-
+  @media screen and (max-width: 1014px) and (min-width: 945px){
+    .box2 img{
+      margin-top: 30px;
+    }
+  }
+  /*Aqui es cuando se colocan en bloque*/
   @media screen and (max-width: 945px){
     .contenido-inicio{
       display: block;
     }
+
+    .box2 img{
+      margin-top: -5px;
+      margin-left: 0px;
+    }
+
+    .boxs h2{
+      margin-top: 30px;
+    }
+
   }
 
   @media screen and (max-width: 1015px) and (min-width: 945px){
@@ -637,16 +685,35 @@ h2 .name{
 
   @media screen and (max-width: 570px){
     .box2 img{
-      width: 200px;
+      width: 250px;
     }
 
     .separador-end{
       margin-top: -4px;
     }
   }
+
+  @media screen and (max-width: 840px){
+    .hr-exp{
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    .exp-box .item-mask1 img{
+       width: 240px;
+    }
+  }
                               
   /*Media para el Inicio/Menú*/
   @media screen and (max-width: 1260px){
+
+    #logo2{
+      display: block;
+      margin-top: -2px;
+      margin-bottom: -5px;
+      width: 70px;
+    }
 
     .separador1{
       margin-top: 8px;
@@ -675,7 +742,7 @@ h2 .name{
   }
 
     .header #burger{
-      margin-top: 10px;
+      margin-top: 8px;
       display: inline-flex;
       align-items: center;
       cursor: pointer;
@@ -689,7 +756,8 @@ h2 .name{
     #toggle:checked ~ .navegacion, .header nav ul {
       max-height: 100%;
       /*De esta forma he conseguido por fin fijar el menú en el centro sin que se mueva*/
-      margin-right: 51px;
+      margin-right: 28px;
+      margin-top: 0px;
       justify-content: center;
     }
 
@@ -697,8 +765,12 @@ h2 .name{
       display: none;
     }
 
+    #toggle:checked ~ a #logo2 {
+      display: none;
+    }
+
     #toggle:checked ~ #close {
-      margin-top: 16px;
+      
       display: inline-flex;
       align-items: center;
       cursor: pointer;
@@ -735,7 +807,7 @@ h2 .name{
     }
 
     .v1 .titulo-contacto{
-      margin-top: -22px;
+      margin-top: -25px;
     }
 
     .nombre,
@@ -778,10 +850,6 @@ h2 .name{
     .v2{
       margin-top: -30px;
       margin-bottom: 50px;
-    }
-
-    .v1 .titulo-contacto{
-      margin-top: -22px;
     }
 
     .nombre,

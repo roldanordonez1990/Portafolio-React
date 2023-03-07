@@ -35,7 +35,7 @@ export const Inicio = () => {
         </div>
         <div className="boxs">
           <div className="box2">
-            <img alt="logo" src="/images/foto22.png" />
+            <img alt="logo" src="/images/foto1.png" />
           </div>
         </div>
       </section>
@@ -43,25 +43,54 @@ export const Inicio = () => {
       <h2 className="titulo-boxs">¿Qué servicios ofrece mi trabajo?</h2>
       <article className="cards">
           <div className="card">
+            <Link to="/servicios">
             <span class="material-symbols-rounded">laptop_chromebook</span>
-            <Link to="/contacto">
             <span className="texto-box1">Desarrollo Web</span>
             </Link>
           </div>
           <div className="card">
+            <Link to="/servicios/qa">
             <span class="material-symbols-outlined">mobile_friendly</span>
-            <Link to="/contacto">
             <span className="texto-box2">QA</span>
             </Link>
           </div>
           <div className="card">
-          <span class="material-symbols-outlined">play_circle</span>
-            <Link to="/contacto">
+            <Link to="/servicios">
+            <span class="material-symbols-outlined">play_circle</span>
             <span className="texto-box3">Automatización</span>
             </Link>
           </div>
       </article>
-      <h2 className="titulo-proyects">Algunos de mis proyectos</h2>
+      <h2 className="titulo-boxs">Experiencia profesional</h2>
+      <section className="experiencia-container">    
+            <div className="exp-box">
+              <div className="item-mask1">
+                <Link to="/about">
+                <img src="/images/hostgreen1.png" alt="ntt" />
+                </Link>
+              </div>
+                <span className="titulo-exp"><strong>Desarrollador Web</strong></span>
+                <br/>
+                <span className="texto-tecnologias">Proyecto: Adivin (2020-2021)</span>
+                <br/>
+                <span className="texto-tecnologias">PHP, HTML5, CSS3, JavaScript y MySQL</span>
+                <hr className="hr-exp"/>
+            </div>
+            <div className="exp-box">
+              <div className="item-mask">
+                <Link to="/about">
+                <img src="/images/ntt.png" alt="ntt" />
+                </Link>
+              </div>
+                <span className="titulo-exp"><strong>QA Tester y Automatización</strong></span>
+                <br/>
+                <span className="texto-tecnologias">Proyecto: CaixaBankNow (2021-Actualidad)</span>
+                <br/>
+                <span className="texto-tecnologias">Selenium Web Driver/Appium Java</span>
+                <hr className="hr-exp"/>
+            </div>
+      </section>
+      <h2 className="titulo-proyects">Algunos de mis proyectos personales</h2>
       <ListadoProyectos limite="2"/>
     </>
   );
