@@ -23,6 +23,7 @@ body{
     justify-content: flex-end;
     line-height: 270px;
     margin-top: -48px;
+    margin-right: -39px;
 }
 
 .header nav ul{
@@ -52,9 +53,13 @@ body{
 /*Hacemos que el menú hamburguesa se oculte*/
 #toggle,
 header #burger,
-header #close,
 #logo2{
     display: none;
+}
+
+/*Sólo funciona la animación con hidden*/
+header #close{
+  visibility: hidden;
 }
 
 .header img{
@@ -76,6 +81,7 @@ header #close,
 
 .separador-end{
     margin-top: -4px;
+    margin-bottom: -20px;
     border: 1px solid #f5f5f5;
 }
 
@@ -163,11 +169,14 @@ h2 .name{
 .items .item-mask{
     overflow: hidden;
     /*Esto hace que no sobresalga nada de la máscara. Por eso al aumentar la img hace zoom sin salir*/
+    background-color: black;
+    
 }
 
 .items:hover img{
     width: 130%;
     height: 130%;
+    opacity: 100%;
     margin-right: 35%;
 }
 
@@ -179,6 +188,7 @@ h2 .name{
 .items img{
     width: 100%;
     height: 100%;
+    opacity: 50%;
     transition: all 500ms;
 }
 
@@ -201,7 +211,8 @@ h2 .name{
     align-items: center;
 }
 
-.titulo-boxs{
+.titulo-boxs1,
+.titulo-boxs2{
     text-align: center;
     margin-top: 60px;
     text-decoration: underline;
@@ -217,8 +228,9 @@ h2 .name{
 
 .titulo-proyects-portafolio{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 37px;
+  text-decoration: underline;
 }
 
 .exp-box .item-mask,
@@ -229,7 +241,12 @@ h2 .name{
 .box2 img{
   width: 450px;
   margin-top: 15px;
-  margin-left: 25px;
+  margin-left: 70px;
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
 }
 
 .texto-box1,
@@ -256,6 +273,61 @@ h2 .name{
     color: #b8b8b8;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+
+.servicios-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.servicios-container h3{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+
+.texto-servicios{
+  text-align: center;
+  margin-bottom: -22px;
+}
+
+.texto-servicios2{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.servicio-div-texto{
+  width: 80%;
+  margin-top: 15px;
+  
+}
+
+.servicio-div-texto2{
+  width: 100%;
+}
+
+.servicio-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-right: 42px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.servicio-list a{
+  text-decoration: none;
+  color: black;
+  transition: all 300ms;
+}
+
+.texto-servicio-list1 a:hover,
+.texto-servicio-list2 a:hover,
+.texto-servicio-list3 a:hover{
+  color: #ab8616;
+  cursor: pointer;
 }
 
 .experiencia-container{
@@ -292,13 +364,20 @@ h2 .name{
 .icon{
   color: gray;
   text-decoration: none;
-  margin-left: 8px;
-  margin-top: 7px;
+  padding: 4px;
+  margin-top: 1px;
   transition: all 300ms;
 }
 
 .icon:hover{
   color: black;
+}
+
+a .fas{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 48px;
+  margin-top: 30px;
 }
 
 .material-symbols-rounded {
@@ -325,6 +404,7 @@ h2 .name{
   display: flex;
   padding-top: 1px;
 }
+
 .ajustepBtn{
   margin-bottom: 10px;
 }
@@ -506,8 +586,6 @@ h2 .name{
     transition: all 700ms;
     box-shadow: 0px 0px 25px 2px #AAA;  
   }
-
-  /* Shadow to make it look like form is floating  */
  
 .submit-999{
     border-radius:5px;
@@ -655,9 +733,9 @@ h2 .name{
     }
   }
 
-  @media screen and (max-width: 1014px) and (min-width: 945px){
+  @media screen and (max-width: 1072px) and (min-width: 945px){
     .box2 img{
-      margin-top: 30px;
+      margin-top: 50px;
     }
   }
   /*Aqui es cuando se colocan en bloque*/
@@ -676,7 +754,9 @@ h2 .name{
     }
 
   }
+  /*Aqui es cuando se colocan en bloque*/
 
+  /*Media de ajustes para pantallas intermedias*/
   @media screen and (max-width: 1015px) and (min-width: 945px){
     .separador-end{
       margin-top: -8px;
@@ -691,11 +771,23 @@ h2 .name{
     .separador-end{
       margin-top: -4px;
     }
+
+    .servicio-div-texto{
+      margin-top: 10px;
+    }
   }
 
   @media screen and (max-width: 840px){
     .hr-exp{
       display: block;
+    }
+
+    .titulo-proyects{
+      margin-top: -33px;
+    }
+
+    .titulo-boxs2{
+      margin-top: -10px;
     }
   }
 
@@ -704,9 +796,10 @@ h2 .name{
        width: 240px;
     }
   }
+  /*Media de ajustes para pantallas intermedias*/
                               
   /*Media para el Inicio/Menú*/
-  @media screen and (max-width: 1260px){
+  @media screen and (max-width: 1100px){
 
     #logo2{
       display: block;
@@ -749,6 +842,13 @@ h2 .name{
       margin-left: -45px;
     }
 
+    .header #close{
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      margin-left: -45px;
+    }
+
     .header img{
       display: none;
     }
@@ -770,14 +870,39 @@ h2 .name{
     }
 
     #toggle:checked ~ #close {
-      
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-      margin-left: -45px;
+      visibility: visible;
+      transform: rotateX(190deg);
+      transform: rotateY(190deg);
+      transition: all 600ms;
     }
   }
   /*Media para el Inicio/Menú*/
+
+  /*Media para Servicios*/
+  @media screen and (max-width: 505px){
+    .servicio-list{
+      flex-direction: column;
+      
+    }
+
+    .servicio-list .material-symbols-rounded{
+      margin-bottom: -40px;
+    }
+    
+    .servicio-list .material-symbols-outlined{
+      margin-bottom: -26px;
+    }
+
+    .servicios-container hr{
+      margin-top: 30px;
+    }
+
+    .texto-servicios{
+      margin-bottom: -20px;
+    }
+
+  }
+  /*Media para Servicios*/
 
   /*Media para el Contacto*/
   @media screen and (max-width:905px){
@@ -807,7 +932,7 @@ h2 .name{
     }
 
     .v1 .titulo-contacto{
-      margin-top: -25px;
+      margin-top: -21px;
     }
 
     .nombre,
@@ -867,3 +992,29 @@ h2 .name{
     }
   }
   /*Media para el Contacto*/
+
+  /*Media para Inicio y Contacto para dispositivos muy grandes*/
+  @media screen and (min-width: 1600px) and (max-width: 2500px){
+    .contenido-inicio{
+      margin-left: 150px;
+    }
+    .box2 img{
+      margin-left: 50px;
+    }
+  }
+
+  @media screen and (min-width: 2500px){
+    .contenido-inicio{
+      margin-left: 250px;
+    }
+    .box2 img{
+      margin-left: 200px;
+    }
+  }
+
+  @media screen and (min-width: 1700px){
+    .v{
+      margin-left: 160px;
+    }
+  }
+  /*Media para Inicio y Contacto para dispositivos muy grandes*/

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const ListadoProyectos = ({limite}) => {
   return (
     <>
-      <section className="box-items">
+      <section id="box-items" className="box-items">
         {/*Con slice podemos limitar posiciones del array*/}
         {proyectos.slice(0, limite).map((proyecto) => {
           return (
@@ -21,6 +21,9 @@ export const ListadoProyectos = ({limite}) => {
           );
         })}
       </section>
+      <div className="arrow">
+        <a href="#box-items"><i className='fas fa-arrow-circle-up'></i></a>
+      </div>
     </>
   );
 };

@@ -24,11 +24,10 @@ export const RouterPrincipal = () => {
             <Route path="/servicios" element={<Servicios/>}/>
             <Route path="/portafolio" element={<Portafolio />} />
             <Route path="/contacto" element={<Contacto />} />
-              <Route path="/proyectos/*">
-                <Route path="elgranizo"/>
-                <Route path="firsttrain"/>
-                <Route path="portafolioweb" element={<Navigate to="/inicio"/>}/>
+              <Route path="/proyectos">
+                
               </Route>
+            <Route path="*" element={<div>Error 404 Not Found</div>}/>
         </Routes>
         {/*Footer*/}
         <Footer/>

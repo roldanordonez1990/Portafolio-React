@@ -5,7 +5,8 @@ import { ListadoProyectos } from "./ListadoProyectos";
 export const Inicio = () => {
   return (
     <>
-      <section className="contenido-inicio">
+      <section id="contenido-inicio" className="contenido-inicio">
+        <span id="box-items"></span>
         <div className="boxs">
             <h2>
               ¡Hola! Soy
@@ -40,7 +41,7 @@ export const Inicio = () => {
         </div>
       </section>
       <hr className="separador-end" />
-      <h2 className="titulo-boxs">¿Qué servicios ofrece mi trabajo?</h2>
+      <h2 className="titulo-boxs1">¿Qué servicios ofrece mi trabajo?</h2>
       <article className="cards">
           <div className="card">
             <Link to="/servicios">
@@ -49,7 +50,7 @@ export const Inicio = () => {
             </Link>
           </div>
           <div className="card">
-            <Link to="/servicios/qa">
+            <Link to="/servicios">
             <span class="material-symbols-outlined">mobile_friendly</span>
             <span className="texto-box2">QA</span>
             </Link>
@@ -61,7 +62,7 @@ export const Inicio = () => {
             </Link>
           </div>
       </article>
-      <h2 className="titulo-boxs">Experiencia profesional</h2>
+      <h2 className="titulo-boxs2">Experiencia profesional</h2>
       <section className="experiencia-container">    
             <div className="exp-box">
               <div className="item-mask1">
@@ -86,7 +87,7 @@ export const Inicio = () => {
                 <br/>
                 <span className="texto-tecnologias">Proyecto: CaixaBankNow (2021-Actualidad)</span>
                 <br/>
-                <span className="texto-tecnologias">Selenium Web Driver/Appium Java</span>
+                <span className="texto-tecnologias">Java: Selenium Web Driver/Appium</span>
                 <hr className="hr-exp"/>
             </div>
       </section>

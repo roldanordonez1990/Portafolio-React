@@ -8,6 +8,7 @@ export const HeaderNav = () => {
           <Link to="/inicio">
             <img src="/images/logo.svg" alt="logo"/>
           </Link>
+          {/*Para que hagan caso al toggle tienen que estar debajo de él y tener for=''toggle'*/}
           <input id="toggle" type="checkbox"/>
           <label id="burger" for="toggle"><i className="fas fa-bars"></i></label>
           <label id="close" for="toggle"><i className="fas fa-times fa-lg"></i></label>
