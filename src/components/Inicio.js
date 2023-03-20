@@ -13,7 +13,7 @@ export const Inicio = () => {
               <span className="name"> Francisco José Roldán Ordóñez</span>
             </h2>
             <hr className="separador-nombre" />
-            <p className="">
+            <p>
               <strong>Desarrollador de Aplicaciones Web</strong> y
               <strong> QA Tester</strong>. Tengo experiencia en proyectos de
               comercio electrónico y del sector bancario en el ámbito nacional.
@@ -72,7 +72,7 @@ export const Inicio = () => {
               </div>
                 <span className="titulo-exp"><strong>Desarrollador Web</strong></span>
                 <br/>
-                <span className="texto-tecnologias">Proyecto: Adivin (2020-2021)</span>
+                <span className="texto-tecnologias">Proyecto: Adivin (2021-2022)</span>
                 <br/>
                 <span className="texto-tecnologias">PHP, HTML5, CSS3, JavaScript y MySQL</span>
                 <hr className="hr-exp"/>
@@ -85,7 +85,7 @@ export const Inicio = () => {
               </div>
                 <span className="titulo-exp"><strong>QA Tester y Automatización</strong></span>
                 <br/>
-                <span className="texto-tecnologias">Proyecto: CaixaBankNow (2021-Actualidad)</span>
+                <span className="texto-tecnologias">Proyecto: CaixaBankNow (2022-Actualidad)</span>
                 <br/>
                 <span className="texto-tecnologias">Java: Selenium Web Driver/Appium</span>
                 <hr className="hr-exp"/>

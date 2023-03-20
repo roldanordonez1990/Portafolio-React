@@ -35,7 +35,7 @@ export const Servicios = () => {
               <li className="texto-servicio-list2"><a onClick={(e) =>activarQa(e)} href="#qa"><span className="material-symbols-outlined">mobile_friendly</span></a></li>
               <li className="texto-servicio-list3"><a onClick={(e) =>activarAuto(e)} href="#auto"><span className="material-symbols-outlined">play_circle</span></a></li>
           </ul>
-          <hr /> 
+          <hr className="separador-servicios"/> 
         </div>
           <div className="servicio-div-texto2">
             <h3 id="daw">Desarrollo Web</h3> 
@@ -56,7 +56,6 @@ export const Servicios = () => {
             <p className="texto-servicios2">
             - Posicionamiento SEO.
             </p>
-            
             <h3 id="qa">Quality Assurance</h3> 
             <p className="texto-servicios2">
             - Control de calidad del software.
@@ -75,7 +74,7 @@ export const Servicios = () => {
             </p>
             <h3 id="auto">Automatización de Pruebas</h3> 
             <p className="texto-servicios2">
-            - Control de calidad del sofware de forma automática.
+            - Control de calidad del software de forma automática.
             </p>
             <p className="texto-servicios2">
             - Testeo automático de aplicaciones web y móviles.
