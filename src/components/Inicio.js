@@ -25,7 +25,7 @@ export const Inicio = () => {
             </p>
             <p className="ajustepBtn">
               Tengo interés por las nuevas tecnologías tanto dentro del ámbito
-              laboral como fuera de este. Reflejándose así en retos personales y en la
+              laboral como fuera de este, reflejándose así en retos personales y en la
               consecución de los mismos.
             </p>
             <p className="pBtn">

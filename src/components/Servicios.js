@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Servicios = () => {
 
@@ -24,18 +25,27 @@ export const Servicios = () => {
       <section className="servicios-container">
         <div className="servicio-div-texto">
           <p id="texto-servicios" className="texto-servicios">
-            Este apartado está enfocado en mostrar y dar a conocer las distintas
-            áreas sobre las cuales trabajo a nivel laboral y personal dentro del mundo
-            <strong> IT </strong>
+            Este apartado está enfocado en mostrar y dar a conocer, las distintas
+            áreas sobre las cuales trabajo a nivel laboral y personal dentro del
+            <strong> desarrollo web </strong>
             y cómo estas pueden aplicarse en cualquier ámbito de manera útil. 
             
           </p>
+          
           <ul className="servicio-list">
               <li className="texto-servicio-list1"><a onClick={(e) =>activarDaw(e)} href="#daw"><span className="material-symbols-rounded">laptop_chromebook</span></a></li>
               <li className="texto-servicio-list2"><a onClick={(e) =>activarQa(e)} href="#qa"><span className="material-symbols-outlined">mobile_friendly</span></a></li>
               <li className="texto-servicio-list3"><a onClick={(e) =>activarAuto(e)} href="#auto"><span className="material-symbols-outlined">play_circle</span></a></li>
           </ul>
           <hr className="separador-servicios"/> 
+          <p className="texto-servicios3">
+            ¿Quieres saber más sobre alguna de ellas o tienes interés en aplicarlas?
+          </p>
+          <p className="pBtn texto-servicios">
+              <Link to="/contacto">
+                <span class="btn-special3">Contacta conmigo</span>
+              </Link> 
+            </p>
         </div>
           <div className="servicio-div-texto2">
             <h3 id="daw">Desarrollo Web</h3> 
@@ -86,7 +96,7 @@ export const Servicios = () => {
             - Optimización del tiempo de ejecución.
             </p>
           </div>
-          <a href="#texto-servicios"><i className='fas fa-arrow-circle-up'></i></a>
+          <a className="arrow-servicios" href="#texto-servicios"><i className='fas fa-arrow-circle-up'></i></a>
       </section>
     </>
   );

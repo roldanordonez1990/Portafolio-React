@@ -111,12 +111,17 @@ export const Contacto = () => {
           <p>
             En cambio, si prefieres no usar este formulario, puedes enviarme un mensaje a:
           </p>
-          <p>
-            <a className="correo-personal" href="mailto:roldanordonez.francisco@gmail.com">roldanordonez.francisco@gmail.com</a>
+          <p className="p-correo">
+            <a className="correo-personal" href="mailto:roldanordonez.francisco@gmail.com">roldanordonez.francisco@gmail.com </a>
+              <div className="correo-personal">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
           </p>
+          <div className="div-linkedin">
           <Link className="icon" to="https://www.linkedin.com/in/francisco-jos%C3%A9-rold%C3%A1n-ord%C3%B3%C3%B1ez-6a726112b/" target="_blank" title='LinkedIn'>
             LinkedIn <i className="fab fa-linkedin fa-lg mt-1 fa-2x"><span class="sr-only"></span></i>
           </Link>
+          </div>
 
           {loading ? (
             <div className="wrapper-loading">
@@ -156,6 +161,7 @@ export const Contacto = () => {
           </form>
         </div>
       </div>
+      <div className="magic"></div>
   </section>
   </>
   );

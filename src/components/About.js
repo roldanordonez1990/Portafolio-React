@@ -46,9 +46,9 @@ export const About = () => {
             <h3 id="formacion">01. Mi formación</h3>
             <p>
               Mis estudios oficiales como desarrollador web parten de la
-              obtención del título{" "}
-              <strong>CFGS en Desarrollo de Aplicaciones Web (DAW)</strong> por
-              el IES Marqués de Comares de Lucena (Córdoba) 2019-2021
+              obtención del título
+              <strong className="titulacion"> CFGS en Desarrollo de Aplicaciones Web (DAW)</strong> por
+              el <span><strong className="icon2 titulacion">IES Marqués de Comares de Lucena (Córdoba) 2019-2021</strong></span>
             </p>
             <p>
               La tecnología forma parte de mi vida no sólo en el ámbito laboral,
@@ -56,9 +56,9 @@ export const About = () => {
               actualización para proyectos personales o por petición externa.
             </p>
             <p>
-              También soy Licenciado en Geografía por la UMA
-              2008-2013 y con titulación de Máster de Desarrollo Territorial Sostenible por la
-              UAM 2014-2015.
+              También soy <span><strong className="icon2 titulacion">Licenciado en Geografía por la UMA
+              2008-2013.</strong></span> Y con titulación del <span><strong className="icon2 titulacion"> Máster en Desarrollo Territorial Sostenible por la
+              UAM 2014-2015.</strong></span>
             </p>
             <hr className="separador-skills"/>
           </div>
@@ -69,33 +69,33 @@ export const About = () => {
             <p>
               -
               <strong>
-              <Link className="icon" to="https://www.hostgreen.es/" target="_blank">
-                2021-2022 - Hostgreen:
+              <Link className="icon2 titulacion" to="https://www.hostgreen.es/" target="_blank">
+                2021-2022 - Hostgreen:&nbsp;
               </Link> 
               </strong>
               Desarrollador Web Full Stack en el proyecto
-              de comercio electrónico
+              de comercio electrónico&nbsp;
               <strong>
-              <Link className="icon" to="https://www.adivin.com/" target="_blank">
+              <Link className="icon2 titulacion" to="https://www.adivin.com/" target="_blank">
                 Adivin.
               </Link>
               </strong>
-              Desarrollo y mantenimiento de su página web, base de datos y CRM
-              de software libre.
+              &nbsp;Desarrollo y mantenimiento de su página web, base de datos y CRM
+              de software libre con PHP.
             </p>
             <p>
               -
               <strong>
-                <Link className="icon" to="https://www.nttdata.com/global/en/" target="_blank">
-                2022-Actualidad - NTT DATA:
+                <Link className="icon2 titulacion" to="https://www.nttdata.com/global/en/" target="_blank">
+                2022-Actualidad - NTT DATA:&nbsp;
                 </Link>
               </strong>
-              QA Tester y Automatización para el proyecto de banca digital
-              <strong><Link className="icon" to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html" target="_blank">
-                CaixabankNow.
+              QA Tester y Automatización para el proyecto de banca digital&nbsp; 
+              <strong><Link className="icon2 titulacion" to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html" target="_blank">
+                 CaixabankNow.
                 </Link>
               </strong>
-              Mi trabajo
+              &nbsp;Mi trabajo
               consiste en garantizar una mayor y mejor calidad del software
               tanto en la versión web como en la aplicación móvil, combinando pruebas
               funcionales unitarias e integradas, así como en la automatización
@@ -155,7 +155,7 @@ export const About = () => {
             </div>
             <span>React</span>
             <div class="container-skills">
-              <div class="skills react">30%</div>
+              <div class="skills react">40%</div>
             </div>
             <span>Angular</span>
             <div class="container-skills">
@@ -167,7 +167,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <div className="about-box">
+        <div className="arrow-about" >
           <a href="#inicio-about"><i className='fas fa-arrow-circle-up'></i></a>
         </div>
       </section>
