@@ -48,7 +48,7 @@ export const About = () => {
               Mis estudios oficiales como desarrollador web parten de la
               obtención del título
               <strong className="titulacion"> CFGS en Desarrollo de Aplicaciones Web (DAW)</strong> por
-              el <span><strong className="icon2 titulacion">IES Marqués de Comares de Lucena (Córdoba) 2019-2021</strong></span>
+              el <span className="titulacion">IES Marqués de Comares de Lucena (Córdoba) 2019-2021</span>
             </p>
             <p>
               La tecnología forma parte de mi vida no sólo en el ámbito laboral,
@@ -56,9 +56,9 @@ export const About = () => {
               actualización para proyectos personales o por petición externa.
             </p>
             <p>
-              También soy <span><strong className="icon2 titulacion">Licenciado en Geografía por la UMA
-              2008-2013.</strong></span> Y con titulación del <span><strong className="icon2 titulacion"> Máster en Desarrollo Territorial Sostenible por la
-              UAM 2014-2015.</strong></span>
+              También soy <span className="titulacion">Licenciado en Geografía por la UMA
+              2008-2013.</span> Y con titulación del <span className="titulacion"> Máster en Desarrollo Territorial Sostenible por la
+              UAM 2014-2015.</span>
             </p>
             <hr className="separador-skills"/>
           </div>

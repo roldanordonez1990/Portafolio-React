@@ -9,8 +9,8 @@ export const Inicio = () => {
         <span id="box-items"></span>
         <div className="boxs">
             <h2>
-              ¡Hola! Soy
-              <span className="name"> Francisco José Roldán Ordóñez</span>
+              ¡Hola! soy
+              <span className="name"> Francisco José Roldán</span>
             </h2>
             <hr className="separador-nombre" />
             <p>
@@ -24,9 +24,9 @@ export const Inicio = () => {
               Specialist</span>, en remoto, desde Málaga (España).
             </p>
             <p className="ajustepBtn">
-              Tengo interés por las nuevas tecnologías tanto dentro del ámbito
-              laboral como fuera de este, reflejándose así en retos personales y en la
-              consecución de los mismos.
+              Me interesan las nuevas tecnologías y las aplico tanto en el ámbito
+              laboral como en el personal. Continuamente me planteo nuevos retos en este sentido 
+              y busco la satisfacción de conseguirlos.
             </p>
             <p className="pBtn">
               <Link to="/contacto">
@@ -36,7 +36,7 @@ export const Inicio = () => {
         </div>
         <div className="boxs">
           <div className="box2">
-            <img alt="logo" src="/images/foto1.png" />
+            <img alt="logo" src="/images/foto.png" />
           </div>
         </div>
       </section>

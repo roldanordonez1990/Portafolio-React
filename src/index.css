@@ -244,7 +244,7 @@ h2 .name{
 
 .box2 img{
   width: 450px;
-  margin-top: 15px;
+ 
   margin-left: 70px;
 }
 
@@ -530,7 +530,7 @@ a .fas{
 }
 
 .ajustepBtn{
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 }
 /*Efecto del botón*/
 .pBtn span{cursor:pointer; clear:both;  border-radius: 5px; padding:20px 30px; display:inline-block; margin:0 20px; transition:all 900ms, color 0.3s 0.3s; cursor:pointer; background:#f5f5f5; color:rgb(0, 0, 0);}
@@ -864,13 +864,8 @@ a .fas{
     }
   }
 
-  @media screen and (max-width: 1072px) and (min-width: 945px){
-    .box2 img{
-      margin-top: 50px;
-    }
-  }
   /*Aqui es cuando se colocan en bloque*/
-  @media screen and (max-width: 945px){
+  @media screen and (max-width: 1045px){
     .contenido-inicio{
       display: block;
     }
