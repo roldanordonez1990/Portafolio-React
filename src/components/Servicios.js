@@ -25,9 +25,9 @@ export const Servicios = () => {
       <section className="servicios-container">
         <div className="servicio-div-texto">
           <p id="texto-servicios" className="texto-servicios">
-            Este apartado está enfocado en mostrar y dar a conocer, las distintas
+            Este apartado está enfocado en mostrar y dar a conocer las distintas
             áreas sobre las cuales trabajo a nivel laboral y personal dentro del
-            <strong> desarrollo web </strong>
+            <strong> desarrollo web, </strong>
             y cómo estas pueden aplicarse en cualquier ámbito de manera útil. 
             
           </p>
@@ -39,11 +39,11 @@ export const Servicios = () => {
           </ul>
           <hr className="separador-servicios"/> 
           <p className="texto-servicios3">
-            ¿Quieres saber más sobre alguna de ellas o tienes interés en aplicarlas?
+            <strong>¿Quieres saber más sobre alguna de ellas o tienes interés en aplicarlas?</strong>
           </p>
           <p className="pBtn texto-servicios">
               <Link to="/contacto">
-                <span class="btn-special3">Contacta conmigo</span>
+                <span className="btn-special3">Contacta conmigo</span>
               </Link> 
             </p>
         </div>

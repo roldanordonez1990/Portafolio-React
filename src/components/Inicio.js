@@ -30,7 +30,7 @@ export const Inicio = () => {
             </p>
             <p className="pBtn">
               <Link to="/contacto">
-                <span class="btn-special3">Contacta conmigo</span>
+                <span className="btn-special3">Contacta conmigo</span>
               </Link> 
             </p>
         </div>
@@ -45,19 +45,19 @@ export const Inicio = () => {
       <article className="cards">
           <div className="card">
             <Link to="/servicios">
-            <span class="material-symbols-rounded">laptop_chromebook</span>
+            <span className="material-symbols-rounded">laptop_chromebook</span>
             <span className="texto-box1">Desarrollo Web</span>
             </Link>
           </div>
           <div className="card">
             <Link to="/servicios">
-            <span class="material-symbols-outlined">mobile_friendly</span>
+            <span className="material-symbols-outlined">mobile_friendly</span>
             <span className="texto-box2">QA</span>
             </Link>
           </div>
           <div className="card">
             <Link to="/servicios">
-            <span class="material-symbols-outlined">play_circle</span>
+            <span className="material-symbols-outlined">play_circle</span>
             <span className="texto-box3">Automatización</span>
             </Link>
           </div>
@@ -78,7 +78,7 @@ export const Inicio = () => {
                 <hr className="hr-exp"/>
             </div>
             <div className="exp-box">
-              <div className="item-mask">
+              <div>
                 <Link to="/about">
                 <img src="/images/ntt.png" alt="ntt" />
                 </Link>

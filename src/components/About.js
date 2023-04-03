@@ -40,6 +40,9 @@ export const About = () => {
             </a>
           </li>
         </ul>
+        <p className="p-cv">
+          <h4 id="cv"><a className="cv" href="../docs/CV_Francisco_Roldan.pdf" download>Descargar CV</a></h4>
+        </p>
         <hr className="separador-about"/>
         <div className="about-box">
           <div className="f2">
@@ -70,10 +73,10 @@ export const About = () => {
               -
               <strong>
               <Link className="icon2 titulacion" to="https://www.hostgreen.es/" target="_blank">
-                2021-2022 - Hostgreen:&nbsp;
+                2021-2022. Hostgreen:&nbsp;
               </Link> 
               </strong>
-              Desarrollador Web Full Stack en el proyecto
+              <span className="titulacion">Desarrollador Web Full Stack</span> en el proyecto
               de comercio electrónico&nbsp;
               <strong>
               <Link className="icon2 titulacion" to="https://www.adivin.com/" target="_blank">
@@ -87,10 +90,10 @@ export const About = () => {
               -
               <strong>
                 <Link className="icon2 titulacion" to="https://www.nttdata.com/global/en/" target="_blank">
-                2022-Actualidad - NTT DATA:&nbsp;
+                2022-Actualidad. NTT DATA:&nbsp;
                 </Link>
               </strong>
-              QA Tester y Automatización para el proyecto de banca digital&nbsp; 
+              <span className="titulacion">QA Tester y Automatización</span> para el proyecto de banca digital&nbsp; 
               <strong><Link className="icon2 titulacion" to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html" target="_blank">
                  CaixabankNow.
                 </Link>
@@ -99,8 +102,10 @@ export const About = () => {
               consiste en garantizar una mayor y mejor calidad del software
               tanto en la versión web como en la aplicación móvil, combinando pruebas
               funcionales unitarias e integradas, así como en la automatización
-              de las mismas, por medio de herramientas como Selenium Web Driver
-              y Appium en Java.
+              de las mismas, por medio de herramientas como <span className="titulacion">Selenium Web Driver
+              y Appium</span> en Java. 
+              La metodología empleada dentro del proyecto para la gestión del trabajo diario es <span className="titulacion"> Kanban</span>. 
+              Con el objetivo principal de maximizar la calidad en las entregas de las tareas al cliente.
             </p>
             <hr className="separador-skills"/>
           </div>
@@ -109,32 +114,32 @@ export const About = () => {
           <div className="f2">
             <h3 id="skills">03. Mis habilidades</h3>
             <span>HTML</span>
-            <div class="container-skills">
-              <div class="skills html">90%</div>
+            <div className="container-skills">
+              <div className="skills html">90%</div>
             </div>
             <span>CSS</span>
-            <div class="container-skills">
-              <div class="skills css">70%</div>
+            <div className="container-skills">
+              <div className="skills css">70%</div>
             </div>
             <span>JavaScript</span>
-            <div class="container-skills">
-              <div class="skills js">75%</div>
+            <div className="container-skills">
+              <div className="skills js">75%</div>
             </div>
             <span>Java</span>
-            <div class="container-skills">
-              <div class="skills java">70%</div>
+            <div className="container-skills">
+              <div className="skills java">70%</div>
             </div>
             <span>PHP</span>
-            <div class="container-skills">
-              <div class="skills php">70%</div>
+            <div className="container-skills">
+              <div className="skills php">70%</div>
             </div>
             <span>SQL</span>
-            <div class="container-skills">
-              <div class="skills sql">75%</div>
+            <div className="container-skills">
+              <div className="skills sql">75%</div>
             </div>
             <span>Git</span>
-            <div class="container-skills">
-              <div class="skills git">70%</div>
+            <div className="container-skills">
+              <div className="skills git">70%</div>
             </div>
           </div>
         </div>
@@ -142,28 +147,28 @@ export const About = () => {
           <div className="f2">
             <hr className="separador-skills"/>
             <span>Spring Boot</span>
-            <div class="container-skills">
-              <div class="skills spring">55%</div>
+            <div className="container-skills">
+              <div className="skills spring">55%</div>
             </div>
             <span>Selenium</span>
-            <div class="container-skills">
-              <div class="skills selenium">70%</div>
+            <div className="container-skills">
+              <div className="skills selenium">70%</div>
             </div>
             <span>Appium</span>
-            <div class="container-skills">
-              <div class="skills appium">65%</div>
+            <div className="container-skills">
+              <div className="skills appium">65%</div>
             </div>
             <span>React</span>
-            <div class="container-skills">
-              <div class="skills react">40%</div>
+            <div className="container-skills">
+              <div className="skills react">40%</div>
             </div>
             <span>Angular</span>
-            <div class="container-skills">
-              <div class="skills angular">40%</div>
+            <div className="container-skills">
+              <div className="skills angular">40%</div>
             </div>
             <span>Laravel</span>
-            <div class="container-skills">
-              <div class="skills laravel">40%</div>
+            <div className="container-skills">
+              <div className="skills laravel">40%</div>
             </div>
           </div>
         </div>

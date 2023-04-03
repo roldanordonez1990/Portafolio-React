@@ -12,6 +12,8 @@ export const Contacto = () => {
   const [respuestaOk, setRespuestaOk] = useState(false);
   const [loading, setLoading] = useState(false);
   const [emailError, setEmailError] = useState(false);
+  const [errorSend, setErrorSend] = useState(false);
+
 
   const changeNombre = (e)=>{
     let dato = e.target.value;
@@ -59,16 +61,17 @@ export const Contacto = () => {
   }
 
   const enviarEmail = (e) => {
-    var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,4})+$/;
     var emailInput = document.getElementById("email");
 
     if(validEmail.test(emailInput.value) && habilitado1 && habilitado2 && habilitado3){
       
       setLoading(true);
       e.preventDefault();
-      emailjs.sendForm("service_iqfypcl","template_eal2v49",e.target,"VzTOeiexGwPMGP29Z").then((res) => {
-        console.log(res);
+      emailjs.sendForm("service_iqfypcl","template_eal2v49",e.target,"IYjDekAWB3TKy5jQG").then((res) => {
+        console.log("RESPUESTA:" + res);
         if(res.status === 200){
+          console.log("RESPUESTA:" + res.status);
           setRespuestaOk(true);
           setLoading(false);
           document.getElementById("formulario").reset();
@@ -76,9 +79,18 @@ export const Contacto = () => {
           setHabilitado2(false);
           setHabilitado3(false);
           document.getElementById("email").style.border = "";
+
         }else{
-          setRespuestaOk(false)
+          console.log("RESPUESTA:" + res.status);
+          setErrorSend(true);
+          setRespuestaOk(false);
+          setLoading(false);
         }
+      }, function(error){
+        console.log("RESPUESTA:" + error.status);
+          setErrorSend(true);
+          setRespuestaOk(false);
+          setLoading(false);
       });  
 
     }else{
@@ -114,12 +126,12 @@ export const Contacto = () => {
           <p className="p-correo">
             <a className="correo-personal" href="mailto:roldanordonez.francisco@gmail.com">roldanordonez.francisco@gmail.com </a>
               <div className="correo-personal">
-                <span class="material-symbols-outlined">mail</span>
+                <span className="material-symbols-outlined">mail</span>
               </div>
           </p>
           <div className="div-linkedin">
           <Link className="icon" to="https://www.linkedin.com/in/francisco-jos%C3%A9-rold%C3%A1n-ord%C3%B3%C3%B1ez-6a726112b/" target="_blank" title='LinkedIn'>
-            LinkedIn <i className="fab fa-linkedin fa-lg mt-1 fa-2x"><span class="sr-only"></span></i>
+            LinkedIn <i className="fab fa-linkedin fa-lg mt-1 fa-2x"><span className="sr-only"></span></i>
           </Link>
           </div>
 
@@ -154,9 +166,14 @@ export const Contacto = () => {
             )
             : ""
             }
+            {errorSend ? (
+              <span className="errorSend">Error al enviar el mensaje. Inténtelo de nuevo o más tarde. Disculpe las molestias.</span>
+            )
+            : ""
+            }
             <input onChange={(e) => changeNombre(e)} type="text" className={habilitado1 ? "nombre2 entry" : "nombre entry" } placeholder="Nombre completo" name="nombre"/>
             <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
-            <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"></textarea>
+            <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/>
             <span><input type="submit" className={habilitado1 && habilitado2 && habilitado3 && !emailError ? "submit-999" : "submit-disabled"} value="Enviar"/></span>
           </form>
         </div>

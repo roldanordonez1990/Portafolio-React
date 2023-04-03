@@ -2,7 +2,7 @@ export const proyectos = [
     {
         "id": "elgranizo",
         "nombre": "Web Meteorológica",
-        "imagen": "elgranizo",
+        "imagen": "mapa3",
         "url": "http://elgranizo.es/index.php",
         "tecnologias": "PHP, JS, SCSS, HTML5, MySQL",
         "categoria": "Desarrollo Web"

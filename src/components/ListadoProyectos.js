@@ -13,7 +13,7 @@ export const ListadoProyectos = ({limite}) => {
               <div className="item-mask">
                 <img src={"/images/" + proyecto.imagen + ".png"} alt="" />
               </div>
-              <Link to={"/proyectos/" + proyecto.id}>
+              <Link to={"/" + proyecto.id}>
                 <h3>{proyecto.nombre}</h3>
               </Link>
               <span className="texto-tecnologias">{proyecto.tecnologias}</span>
