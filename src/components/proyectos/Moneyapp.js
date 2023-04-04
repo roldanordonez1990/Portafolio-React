@@ -37,7 +37,7 @@ export const Moneyapp = () => {
       </p>
       <p>
         El objetivo principal de este proyecto fue la práctica del <span className="titulacion">framework Angular</span> para la parte <span className="titulacion">front</span>. 
-        La idea era desarrollar CRUD (<span className="titulacion">Create, Read, Update and Delete</span>) en una aplicación de escritorio totalemente dinámica con un <span className="titulacion">backend</span> que devolviese datos al usuario de forma asíncrona gracias a <span className="titulacion">Angular</span>. 
+        La idea era desarrollar un CRUD (<span className="titulacion">Create, Read, Update and Delete</span>) en una aplicación de escritorio totalemente dinámica con un <span className="titulacion">backend</span> que devolviese datos al usuario de forma asíncrona gracias a <span className="titulacion">Angular</span>. 
         Por su parte, el <span className="titulacion">backend</span> fue desarrollado con otro <span className="titulacion">framework, Spring Boot</span>, para el trámite de datos con la base de datos de forma más eficiente.
       </p>
       <p>

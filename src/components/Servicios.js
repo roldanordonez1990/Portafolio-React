@@ -27,7 +27,7 @@ export const Servicios = () => {
           <p id="texto-servicios" className="texto-servicios">
             Este apartado está enfocado en mostrar y dar a conocer las distintas
             áreas sobre las cuales trabajo a nivel laboral y personal dentro del
-            <strong> desarrollo web, </strong>
+            <strong> desarrollo web </strong>
             y cómo estas pueden aplicarse en cualquier ámbito de manera útil. 
             
           </p>

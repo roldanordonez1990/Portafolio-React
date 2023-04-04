@@ -84,7 +84,7 @@ export const About = () => {
               </Link>
               </strong>
               &nbsp;Desarrollo y mantenimiento de su página web, base de datos y CRM
-              de software libre con PHP.
+              de software libre con <span className="titulacion">PHP</span>.
             </p>
             <p>
               -
@@ -103,7 +103,7 @@ export const About = () => {
               tanto en la versión web como en la aplicación móvil, combinando pruebas
               funcionales unitarias e integradas, así como en la automatización
               de las mismas, por medio de herramientas como <span className="titulacion">Selenium Web Driver
-              y Appium</span> en Java. 
+              y Appium</span> en <span className="titulacion">Java</span>. 
               La metodología empleada dentro del proyecto para la gestión del trabajo diario es <span className="titulacion"> Kanban</span>. 
               Con el objetivo principal de maximizar la calidad en las entregas de las tareas al cliente.
             </p>

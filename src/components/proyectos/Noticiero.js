@@ -41,7 +41,7 @@ export const Noticiero = () => {
       </p>
       <p>
         La aplicación puede filtrar noticias por categorías; deportivas, sociales, económicas y políticas de ámbito nacional e internacional,
-        así como publicar tus propias noticias después de haberte registrado como miembro.
+        así como publicar tus propias noticias después de haber sido registrado como miembro.
       </p>
       <p>
       Todas las funciones de este proyecto fueron realizadas de manera individual.
