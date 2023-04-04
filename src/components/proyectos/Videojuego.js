@@ -11,23 +11,11 @@ export const Videojuego = () => {
       <p className='p-container-proyectos'>Videojuego sencillo de fácil jugabilidad para practicar la lógica con <span className="titulacion">JS</span>. </p>
       <Carousel>
         <div >
-          <img src="/images/juego.png" alt="1" />
+          <img src="/images/juego3.png" alt="1" />
           <p className="legend1"></p>
         </div>
         <div>
-          <img src="/images/paisajes.png" alt="2" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/juego2.png" alt="2" />
           <p className="legend1"></p>
         </div>
       </Carousel>

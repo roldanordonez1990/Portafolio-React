@@ -532,14 +532,19 @@ h2 .name{
 .footer{
     height: 100px;
     border-top: 2px solid black;
-    line-height: 100px;
-    display: flex;
-    justify-content: center;
+    line-height: 30px;
+    text-align: center;
+    display: block;
     background: linear-gradient(
       90deg,
       #f5f5f5,
       #dedede
     );
+}
+
+.div-footer{
+    display: flex;
+    justify-content: center;
 }
 
 .icon1,
@@ -551,7 +556,7 @@ h2 .name{
 
 .icon1{
   padding-left:6px;
-  margin-top: 4px;
+  margin-top: 26px;
 }
 
 .icon2{
@@ -1103,6 +1108,10 @@ a .fas{
     .servicio-list,
     .servicio-list2{
       flex-direction: column;
+    }
+
+    .container-proyectos{
+      width: 100%;
     }
 
     .p-cv{

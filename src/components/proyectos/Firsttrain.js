@@ -15,19 +15,19 @@ export const Firsttrain = () => {
           <p className="legend1"></p>
         </div>
         <div>
-          <img src="/images/paisajes.png" alt="2" />
+          <img src="/images/ft2.png" alt="2" />
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/ft3.png" alt="1" />
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/ft4.png" alt="1" />
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/ft5.png" alt="1" />
           <p className="legend1"></p>
         </div>
       </Carousel>

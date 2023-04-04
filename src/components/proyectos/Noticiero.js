@@ -14,22 +14,6 @@ export const Noticiero = () => {
           <img src="/images/noticiero.png" alt="1" />
           <p className="legend1"></p>
         </div>
-        <div>
-          <img src="/images/paisajes.png" alt="2" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
       </Carousel>
       <h3 className="about-proyect">Acerca de este proyecto</h3>
       <p>

@@ -19,15 +19,15 @@ export const Granizo = () => {
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/mapa2.png" alt="1" />
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/mapa4.png" alt="1" />
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/mapa6.png" alt="1" />
           <p className="legend1"></p>
         </div>
       </Carousel>
@@ -44,7 +44,7 @@ export const Granizo = () => {
         usando herramientas conjuntas para trabajar en equipo emulando metodologías de trabajo reales (<span className="titulacion">Scrum</span>) donde las tareas eran repartidas.
       </p>
       <p>
-        Dentro de las funciones para la creación de la web, me encargué de organizar el reparto de tareas, diseño de layout y desarrollo y maquetación de páginas como el inicio, mapas interactivos y noticiero.
+        Dentro de las funciones para la creación de la web, me encargué de organizar el reparto de tareas, diseño de layout y desarrollo y maquetación de páginas como el inicio, mapas interactivos, tablas de datos y noticiero.
       </p>
       <h3 className="about-proyect">Tecnologías empleadas</h3>
       <ul className="listado-tecnologias">
@@ -53,8 +53,8 @@ export const Granizo = () => {
         <li>PHP</li>
         <li>JavaScript</li>
         <li>MySQL</li>
-        <li>API: xxxx</li>
-        <li>API: Tom Tom</li>
+        <li>API: <Link className="icon2" to="https://openweathermap.org/api" target="_blank">Openweathermap</Link></li>
+        <li>API: <Link className="icon2" to="https://developer.tomtom.com/" target="_blank">TomTom</Link></li>
       </ul>
       <h3 className="link-proyect">Acceso al código fuente: <Link className="icon2" to="https://github.com/roldanordonez1990/ArCuPa" target="_blank">Github</Link></h3>
       <div className="arrow">

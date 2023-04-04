@@ -15,19 +15,11 @@ export const Moneyapp = () => {
           <p className="legend1"></p>
         </div>
         <div>
-          <img src="/images/paisajes.png" alt="2" />
+          <img src="/images/ma1.png" alt="2" />
           <p className="legend1"></p>
         </div>
         <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
-          <p className="legend1"></p>
-        </div>
-        <div >
-          <img src="/images/mapa3.png" alt="1" />
+          <img src="/images/ma2.png" alt="1" />
           <p className="legend1"></p>
         </div>
       </Carousel>

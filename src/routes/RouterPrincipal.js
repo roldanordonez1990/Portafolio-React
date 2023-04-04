@@ -13,6 +13,7 @@ import { Moneyapp } from '../components/proyectos/Moneyapp';
 import { Firsttrain } from '../components/proyectos/Firsttrain';
 import { Noticiero } from '../components/proyectos/Noticiero';
 import { Videojuego } from '../components/proyectos/Videojuego';
+import { Portafolioweb } from '../components/proyectos/Portafolioweb';
 
 export const RouterPrincipal = () => {
   return (
@@ -32,6 +33,7 @@ export const RouterPrincipal = () => {
             <Route path="/moneyapp" element={<Moneyapp/>}/>
             <Route path="/firsttrain" element={<Firsttrain/>}/>
             <Route path="/noticiero" element={<Noticiero/>}/>
+            <Route path="/portafolioweb" element={<Portafolioweb/>}/>
             <Route path="/videojuego" element={<Videojuego />}/>
             <Route path="/contacto" element={<Contacto />}/>
             <Route path="*" element={<div>Error 404 Not Found</div>}/>
