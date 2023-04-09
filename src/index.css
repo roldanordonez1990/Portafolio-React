@@ -317,7 +317,7 @@ h2 .name{
 }
 
 .arrow-servicios{
-  margin-top: -2px;
+  margin-top: 38px;
 }
 
 .arrow-about{
@@ -356,13 +356,11 @@ h2 .name{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .servicios-container h3{
   text-align: center;
   text-decoration: underline;
-  margin-top: 50px;
 }
 
 .texto-servicios{
@@ -376,7 +374,6 @@ h2 .name{
 }
 
 .texto-servicios3{
-  margin-top: 25px;
   text-align: center;
 }
 
@@ -386,13 +383,13 @@ h2 .name{
 
 .servicio-div-texto{
   width: 80%;
-  margin-top: 15px;
+  margin-top: -18px;
   
 }
 
 .servicio-div-texto2{
   width: 100%;
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .servicio-list,
@@ -402,11 +399,11 @@ h2 .name{
   list-style: none;
   margin-right: 40px;
   justify-content: center;
-  gap: 10px;
 }
 
 .p-cv{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .servicio-list a,
@@ -416,8 +413,18 @@ h2 .name{
   transition: all 300ms;
 }
 
+.servicio-list{
+  gap: 5px;
+}
+
 .servicio-list2{
-  margin-top: -5px;
+  margin-top: -11px;
+}
+
+#qa,
+#auto,
+.texto-servicios3{
+  margin-top: 50px;
 }
 
 .texto-servicio-list1 a:hover,
@@ -434,6 +441,10 @@ h2 .name{
   margin-bottom: 100px;
   justify-content: center;
   gap: 50px;
+}
+
+#experiencia{
+  margin-top: 39px;
 }
 
 .exp-box{
@@ -472,11 +483,19 @@ h2 .name{
 }
 
 .separador-about{
+  margin-top: 30px;
+  border: 1px solid #f5f5f5;
+}
+
+.separador-about2{
   display: none;
+  margin-top: 30px;
+  border: 1px solid #f5f5f5;
 }
 
 .separador-servicios{
   border: 1px solid #f5f5f5;
+  margin-top: -10px;
 }
 
 .separador-skills{
@@ -667,7 +686,6 @@ a .fas{
   font-style: oblique;
   text-decoration: none;
   color: gray;
-  
 }
 
 .contactBody{    
@@ -691,7 +709,6 @@ a .fas{
     box-shadow: 0px 0px 20px 5px #AAA; 
     border-radius: 10px;  
     width: 400px;
-    height: 400px;
     margin: 60px auto 0 auto;
     padding: 10px 10px;  
     animation: bounce 2s infinite;
@@ -783,25 +800,28 @@ a .fas{
 
   .message {   
     background-color: #ab8616;
-    height: 100px;  
-    width:300px;
+    height: 130px;  
+    width: 300px;
     opacity: 40%;
+    resize: none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   .message2 {   
     background-color: #f5f5f5;
-    height: 100px;  
-    width:300px;
+    height: 150px;  
+    width: 350px;
     font-size: 15px;
+    resize: none;
     outline: none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   .message:hover{
     background-color: #f5f5f5;
-    height: 100px;
-    width:350px;
+    height: 150px;
+    width: 350px;
+    resize: none;
     color: rgb(0, 0, 0);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
@@ -823,7 +843,8 @@ a .fas{
     color: rgb(0, 0, 0);
     background-color: #ab8616;  
     border: none;
-    margin-top: 10px; 
+    margin-bottom: 5px;
+    margin-top: -10px; 
     transition: all 500ms;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -843,7 +864,8 @@ a .fas{
     color: rgb(0, 0, 0);
     background-color: #f5f5f5;  
     border: none;
-    margin-top: 10px; 
+    margin-top: -10px;
+    margin-bottom: 5px;
     border: 1px solid rgb(97, 97, 97);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     pointer-events:none; /*Con esta propiedad deshabilitamos el evento del ratón*/
@@ -963,7 +985,7 @@ a .fas{
   }
 
   /*Aqui es cuando se colocan en bloque*/
-  @media screen and (max-width: 1045px){
+  @media screen and (max-width: 1050px){
     .contenido-inicio{
       display: block;
     }
@@ -981,12 +1003,6 @@ a .fas{
   /*Aqui es cuando se colocan en bloque*/
 
   /*Media de ajustes para pantallas intermedias*/
-  @media screen and (max-width: 1015px) and (min-width: 945px){
-    .separador-end{
-      margin-top: -8px;
-    }
-  }
-
   @media screen and (max-width: 570px){
     .box2 img{
       width: 250px;
@@ -994,10 +1010,6 @@ a .fas{
 
     .separador-end{
       margin-top: -4px;
-    }
-
-    .servicio-div-texto{
-      margin-top: 10px;
     }
   }
 
@@ -1110,6 +1122,23 @@ a .fas{
       flex-direction: column;
     }
 
+    .servicio-list2{
+      gap: 18px;
+    }
+
+    .servicio-list{
+      gap: 0px;
+    }
+
+    .servicio-div-texto{
+      margin-top: -25px;
+    }
+
+    .separador-about2{
+      display: block;
+      margin-top: -10px;
+    }
+
     .container-proyectos{
       width: 100%;
     }
@@ -1143,20 +1172,10 @@ a .fas{
       margin-bottom: -20px;
     }
 
-    #formacion{
-      margin-top: 55px;
-      text-align: center;
-    }
-
-    #experiencia,
-    #skills{
-      text-align: center;
-    }
-
     .separador-about{
       display: flex;
-      margin-top: 10px;
-      margin-bottom: -18px;
+      margin-top: -5px;
+      margin-bottom: 18px;
       border: 1px solid #f5f5f5;
     }
 
@@ -1167,10 +1186,6 @@ a .fas{
     .f2,
     .servicio-div-texto{
       width: 100%;
-    }
-
-    .about-box{
-      text-align: center;
     }
 
     .container-proyectos h2,
@@ -1196,7 +1211,13 @@ a .fas{
      }
   }
 
-  @media screen and (max-width: 620px){
+  @media screen and (max-width: 905px){
+    .form{
+      margin-bottom: 50px; 
+    }
+  }
+  
+  @media screen and (max-width: 525px){
 
     .thumbs-wrapper{
       display: none;
@@ -1287,13 +1308,11 @@ a .fas{
     }
   }
 
-  @media screen and (min-width: 1700px){
-    .v{
-      margin-left: 30px;
-    }
+  @media screen and (min-width: 1600px){
 
     .form{
       width: 600px;
+      margin-right: 50px;
     }
     .email,
     .nombre,

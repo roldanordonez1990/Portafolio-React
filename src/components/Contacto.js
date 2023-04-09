@@ -25,7 +25,7 @@ export const Contacto = () => {
   }
 
   const changeEmail = (e)=>{
-    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,4})+$/;
+    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,5})+$/;
     let dato = e.target.value;
 
     if(dato !== ""){
@@ -61,7 +61,7 @@ export const Contacto = () => {
   }
 
   const enviarEmail = (e) => {
-    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,4})+$/;
+    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,5})+$/;
     var emailInput = document.getElementById("email");
 
     if(validEmail.test(emailInput.value) && habilitado1 && habilitado2 && habilitado3){

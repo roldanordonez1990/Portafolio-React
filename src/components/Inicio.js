@@ -19,14 +19,13 @@ export const Inicio = () => {
               comercio electrónico y del sector bancario en el ámbito nacional.
             </p>
             <p>
-              Actualmente trabajo como <strong>QA tester</strong> y
-              <strong> Automatización</strong> con categoría <span className="correo-personal">Testing
+              Actualmente trabajo como <strong>QA Tester</strong> y
+              <strong> Especialista en Automatización de Pruebas</strong> con categoría <span className="correo-personal">Testing
               Specialist</span>, en remoto, desde Málaga (España).
             </p>
             <p className="ajustepBtn">
-              Me interesan las nuevas tecnologías y las aplico tanto en el ámbito
-              laboral como en el personal. Continuamente me planteo nuevos retos en este sentido 
-              y busco la satisfacción de conseguirlos.
+            Me interesan las últimas tendencias en tecnología y busco constantemente nuevos desafíos para lograr mis objetivos personales y profesionales 
+            en este ámbito en constante evolución.
             </p>
             <p className="pBtn">
               <Link to="/contacto">

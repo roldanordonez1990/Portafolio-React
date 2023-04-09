@@ -6,7 +6,7 @@ export const Portafolioweb = () => {
     <>
     <div id="container-proyectos" className="container-proyectos">
       <h2 className="container-proyectos-titulo">Portafolio Web <span className='name'>"Francisco Roldán"</span></h2>
-      <p className='p-container-proyectos'>Portafolio web donde mostrar información personal, habilidades y recorrido profesional. </p>
+      <p className='p-container-proyectos'>Un portafolio web en el cual se pueda presentar información personal, habilidades y trayectoria profesional. </p>
       <h3 className="about-proyect">Acerca de este proyecto</h3>
       <p>
         2023.
