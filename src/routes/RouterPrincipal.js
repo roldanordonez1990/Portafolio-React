@@ -14,6 +14,8 @@ import { Firsttrain } from '../components/proyectos/Firsttrain';
 import { Noticiero } from '../components/proyectos/Noticiero';
 import { Videojuego } from '../components/proyectos/Videojuego';
 import { Portafolioweb } from '../components/proyectos/Portafolioweb';
+import { Error } from '../components/Error';
+
 
 export const RouterPrincipal = () => {
   return (
@@ -36,7 +38,7 @@ export const RouterPrincipal = () => {
             <Route path="/portafolioweb" element={<Portafolioweb/>}/>
             <Route path="/videojuego" element={<Videojuego />}/>
             <Route path="/contacto" element={<Contacto />}/>
-            <Route path="*" element={<div>Error 404 Not Found</div>}/>
+            <Route path="*" element={<Error/>}/>
         </Routes>
         {/*Footer*/}
         <Footer/>

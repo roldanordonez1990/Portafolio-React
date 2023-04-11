@@ -66,7 +66,7 @@ export const About = () => {
               de las mismas por medio de herramientas como <span className="titulacion">Selenium Web Driver
               y Appium</span> en <span className="titulacion">Java</span>. 
               La metodología empleada dentro del proyecto para la gestión del trabajo diario es <span className="titulacion"> Kanban</span>, 
-              combinando herramientas como <span className="titulacion">Rally</span> y <span className="titulacion">Jira</span> para su organización, con el objetivo principal de maximizar la calidad en las entregas de las tareas al cliente.
+              combinando herramientas como <span className="titulacion">Rally</span> y <span className="titulacion">Jira</span> para su organización, con el principal objetivo de maximizar la calidad en las entregas de las tareas al cliente.
             </p>
             <p>
               -
