@@ -20,7 +20,7 @@ export const Portafolioweb = () => {
       </p>
       <p>
       El uso de <span className="titulacion">React</span> como tecnología es por ser altamente escalable permitiendo el desarrollo de interfaces interactivas y dinámicas de manera eficiente, 
-      por lo que facilita la creación aplicaciones web con una mejor experiencia de usuario.
+      por lo que facilita la creación de aplicaciones web con una mejor experiencia de usuario.
       </p>
       <p>
       Todas las funciones de este proyecto fueron realizadas de manera individual.

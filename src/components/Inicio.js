@@ -77,12 +77,12 @@ export const Inicio = () => {
                 <hr className="hr-exp"/>
             </div>
             <div className="exp-box">
-              <div>
+              <div className="item-mask1">
                 <Link to="/about">
                 <img src="/images/ntt.png" alt="ntt" />
                 </Link>
               </div>
-                <span className="titulo-exp"><strong>QA Tester y Automatización</strong></span>
+                <span className="titulo-exp"><strong>QA Tester | Automatización</strong></span>
                 <br/>
                 <span className="texto-tecnologias">Proyecto: CaixaBankNow (2022-Actualidad)</span>
                 <br/>

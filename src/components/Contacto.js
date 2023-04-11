@@ -125,7 +125,7 @@ export const Contacto = () => {
           </p>
           <p className="p-correo">
             <a className="correo-personal" href="mailto:roldanordonez.francisco@gmail.com">roldanordonez.francisco@gmail.com </a>
-              <div className="correo-personal">
+              <div className="correo-personal1">
                 <span className="material-symbols-outlined">mail</span>
               </div>
           </p>

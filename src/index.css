@@ -1,5 +1,13 @@
 body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+
+    /*
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    */
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 .layout{
@@ -35,6 +43,7 @@ body{
     margin-left: 46px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     /*Si no se pone el display block no funciona la transición. Esto actúa como un bloque en conjunto */
     display: block;
     color: black;
@@ -80,7 +89,7 @@ header #close{
 }
 
 .separador-end{
-    margin-top: -4px;
+    margin-top: -5px;
     margin-bottom: -20px;
     border: 1px solid #f5f5f5;
 }
@@ -306,7 +315,7 @@ h2 .name{
 }
 
 .box2 img{
-  width: 450px;
+  width: 480px;
   margin-left: 70px;
 }
 
@@ -688,6 +697,10 @@ a .fas{
   color: gray;
 }
 
+.correo-personal1{
+  margin-top: 4px;
+}
+
 .contactBody{    
     background-size: cover;
     background-attachment: fixed;
@@ -984,8 +997,18 @@ a .fas{
     }
   }
 
+  /*Pequeño arreglo para la imagen y el separador*/
+  @media screen and (max-width: 1208px) and (min-width: 1100px){
+
+    .box2 img{
+      margin-top: 30px;
+    }
+  
+  }
+  /*Pequeño arreglo para la imagen y el separador*/
+
   /*Aqui es cuando se colocan en bloque*/
-  @media screen and (max-width: 1050px){
+  @media screen and (max-width: 1100px){
     .contenido-inicio{
       display: block;
     }
@@ -993,6 +1016,7 @@ a .fas{
     .box2 img{
       margin-top: -5px;
       margin-left: 0px;
+      width: 420px;
     }
 
     .boxs h2{
@@ -1005,7 +1029,7 @@ a .fas{
   /*Media de ajustes para pantallas intermedias*/
   @media screen and (max-width: 570px){
     .box2 img{
-      width: 250px;
+      width: 270px;
     }
 
     .separador-end{

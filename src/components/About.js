@@ -54,7 +54,7 @@ export const About = () => {
                 2022-Actualidad. NTT DATA:&nbsp;
                 </Link>
               </strong>
-              <span className="titulacion">QA tester y especialista en automatización de pruebas</span> para el proyecto de banca digital&nbsp; 
+              <span className="titulacion">QA Tester y Especialista en Automatización de Pruebas</span> para el proyecto de banca digital&nbsp; 
               <strong><Link className="icon2 titulacion" to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html" target="_blank">
                  CaixabankNow.
                 </Link>
@@ -63,10 +63,10 @@ export const About = () => {
               consiste en garantizar una mayor y mejor calidad del software
               tanto en la versión web como en la aplicación móvil, combinando pruebas
               funcionales unitarias e integradas, así como en la automatización
-              de las mismas, por medio de herramientas como <span className="titulacion">Selenium Web Driver
+              de las mismas por medio de herramientas como <span className="titulacion">Selenium Web Driver
               y Appium</span> en <span className="titulacion">Java</span>. 
               La metodología empleada dentro del proyecto para la gestión del trabajo diario es <span className="titulacion"> Kanban</span>, 
-              con el objetivo principal de maximizar la calidad en las entregas de las tareas al cliente.
+              combinando herramientas como <span className="titulacion">Rally</span> y <span className="titulacion">Jira</span> para su organización, con el objetivo principal de maximizar la calidad en las entregas de las tareas al cliente.
             </p>
             <p>
               -
@@ -75,7 +75,7 @@ export const About = () => {
                 2021-2022. Hostgreen:&nbsp;
               </Link> 
               </strong>
-              <span className="titulacion">Desarrollador web full stack</span> en el proyecto
+              <span className="titulacion">Desarrollador Web Full Stack</span> en el proyecto
               de comercio electrónico&nbsp;
               <strong>
               <Link className="icon2 titulacion" to="https://www.adivin.com/" target="_blank">

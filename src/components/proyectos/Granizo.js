@@ -36,7 +36,7 @@ export const Granizo = () => {
         2021.
       </p>
       <p>
-        Este proyecto surge de mi afición por la meteorología, siendo esta uno de mis mayores hobbies. Siempre quise crear una web en la cual pudiese unir varias de mis aficiones,
+        Este proyecto surge de mi afición por la meteorología, siendo esta uno de mis mayores <span className="titulacion">hobbies</span>. Siempre quise crear una web en la cual pudiese unir varias de mis aficiones,
         dándose la oportunidad en una de las asignaturas del <span className="titulacion">CFGS</span>, donde pude escoger la temática personalmente y desarrollar una web completamente dinámica en equipo, junto con dos compañeros más. 
       </p>
       <p>
