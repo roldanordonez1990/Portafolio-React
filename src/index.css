@@ -669,8 +669,8 @@ a .fas{
 .box-error-img{
   display: flex;
   justify-content: center;
-  margin-top: -40px;
-  height: 400px;
+  margin-top: -10px;
+  height: 250px;
 }
 
 .espaciador-error{

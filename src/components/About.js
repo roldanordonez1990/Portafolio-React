@@ -60,7 +60,7 @@ export const About = () => {
                 </Link>
               </strong>
               &nbsp;Mi trabajo
-              consiste en garantizar una mayor y mejor calidad del software
+              consiste en garantizar una mayor calidad del software
               tanto en la versión web como en la aplicación móvil, combinando pruebas
               funcionales unitarias e integradas, así como en la automatización
               de las mismas por medio de herramientas como <span className="titulacion">Selenium Web Driver
