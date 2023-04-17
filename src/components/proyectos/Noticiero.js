@@ -24,8 +24,8 @@ export const Noticiero = () => {
         Aquí la idea era desarrollar una aplicación web completa con una temática de libre elección haciendo uso del <span className="titulacion">framework Laravel</span> y de una base de datos relacional con <span className="titulacion">phpMyadmin</span> como gestor de esta.
       </p>
       <p>
-        La aplicación puede filtrar noticias por categorías; deportivas, sociales, económicas y políticas de ámbito nacional e internacional,
-        así como publicar tus propias noticias después de haber sido registrado como miembro.
+        Las funciones de la aplicación consisten tanto en filtrar noticias por categorías; deportivas, sociales, económicas y políticas de ámbito nacional e internacional,
+        como en publicar tus propias noticias después de haber sido registrado como miembro.
       </p>
       <p>
       Todas las funciones de este proyecto fueron realizadas de manera individual.

@@ -42,7 +42,7 @@ export const Firsttrain = () => {
       </p>
       <p>
         Dado que las tecnologías a usar eran de libre elección, no dudé en emplear los dos <span className="titulacion">framework</span> que hasta el momento me habían dado mejores resultados, 
-        <span className='titulacion'> Angular</span> para la parte <span className="titulacion">frontend</span>, y <span className='titulacion'> Spring Boot</span> para el <span className="titulacion">backend</span>. 
+        <span className='titulacion'> Angular</span> para el <span className="titulacion">frontend</span> y <span className='titulacion'> Spring Boot</span> para el <span className="titulacion">backend</span>. 
         Por otro lado, la base de datos se realizó con <span className='titulacion'> MySQL</span>, usando <span className='titulacion'> triggers</span> para el cupo de reservas en una hora determinada.
       </p>
       <p>

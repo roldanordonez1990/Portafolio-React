@@ -673,6 +673,10 @@ a .fas{
   height: 250px;
 }
 
+.error-color{
+  color: #ab8616;
+}
+
 .espaciador-error{
   height: 150px;
 }
@@ -755,7 +759,7 @@ a .fas{
     box-shadow:  inset 0 -3em 3em rgba(0,0,0,0.1),
     0.3em 0.3em 1em rgba(0,0,0,0.3);
     width: 87%; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
     opacity: 80%;
     margin: 35px auto 0 auto;
     text-align: center;
@@ -774,7 +778,7 @@ a .fas{
     border: 1px solid black;
     margin-bottom: 7px;
     transition: all 300ms;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
     font-size: 15px;
     cursor: pointer;
 }
@@ -788,7 +792,7 @@ a .fas{
 .nombre { 
     background-color: #ab8616;
     width:300px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
     opacity: 40%;
   }
 
@@ -797,14 +801,14 @@ a .fas{
     width:300px;
     font-size: 18px;
     outline: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
   }
 
   input::placeholder,
   textarea::placeholder {
     color: rgb(0, 0, 0);
     font-size: 1.2em;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
   }
 
   .nombre:hover{
@@ -816,7 +820,7 @@ a .fas{
   .email {
     background-color: #ab8616;  
     width:300px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
     opacity: 40%;
   }
 
@@ -825,7 +829,7 @@ a .fas{
     width:300px;
     font-size: 18px;
     outline: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
   }
 
   .email:hover{
@@ -840,7 +844,7 @@ a .fas{
     width: 300px;
     opacity: 40%;
     resize: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
   }
 
   .message2 {   
@@ -850,7 +854,7 @@ a .fas{
     font-size: 15px;
     resize: none;
     outline: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
   }
 
   .message:hover{
@@ -859,7 +863,7 @@ a .fas{
     width: 350px;
     resize: none;
     color: rgb(0, 0, 0);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
   }
 
   .entry{
@@ -882,7 +886,7 @@ a .fas{
     margin-bottom: 5px;
     margin-top: -10px; 
     transition: all 500ms;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
     font-size: 15px;
     cursor: pointer;
   }
@@ -903,7 +907,7 @@ a .fas{
     margin-top: -10px;
     margin-bottom: 5px;
     border: 1px solid rgb(97, 97, 97);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Zen Kaku Gothic Antique', sans-serif;
     pointer-events:none; /*Con esta propiedad deshabilitamos el evento del ratón*/
     font-size: 15px;
     opacity: 25%;

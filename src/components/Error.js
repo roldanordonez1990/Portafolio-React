@@ -8,7 +8,7 @@ export const Error = () => {
         <div className='box-error-img'>
             <img src="/images/sad.svg" alt=''/>
         </div>
-        <h1>Error 404</h1>
+        <h1>Error <span className='error-color'>404</span></h1>
         <h2>Página no encontrada</h2>
         <br/>
         <p className="pBtn">

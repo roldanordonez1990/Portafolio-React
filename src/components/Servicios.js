@@ -3,31 +3,58 @@ import { Link } from "react-router-dom";
 
 export const Servicios = () => {
 
-  const activarDaw = (e) =>{
+  const handleClickArrow = (e) => {
+    const section = document.querySelector('#servicios-container');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleClickDaw = (e) => {
+    const section = document.querySelector('#daw');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+
     document.getElementById("daw").style.color = "#ab8616";
     document.getElementById("qa").style.color = "";
     document.getElementById("auto").style.color = "";
-  }
+  };
 
-  const activarQa = (e) =>{
+  const handleClickQa = (e) => {
+    const section = document.querySelector('#qa');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+
     document.getElementById("daw").style.color = "";
     document.getElementById("qa").style.color = "#ab8616";
     document.getElementById("auto").style.color = "";
-  }
+  };
 
-  const activarAuto = (e) =>{
+  const handleClickAuto = (e) => {
+    const section = document.querySelector('#auto');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+
     document.getElementById("daw").style.color = "";
     document.getElementById("qa").style.color = "";
     document.getElementById("auto").style.color = "#ab8616";
-  }
+  };
+
   return (
     <>
       <section id="servicios-container" className="servicios-container">
         <div className="servicio-div-texto">
           <ul className="servicio-list">
-              <li className="texto-servicio-list1"><a onClick={(e) =>activarDaw(e)} href="#daw"><span className="material-symbols-rounded">laptop_chromebook</span></a></li>
-              <li className="texto-servicio-list2"><a onClick={(e) =>activarQa(e)} href="#qa"><span className="material-symbols-outlined">mobile_friendly</span></a></li>
-              <li className="texto-servicio-list3"><a onClick={(e) =>activarAuto(e)} href="#auto"><span className="material-symbols-outlined">play_circle</span></a></li>
+              <li className="texto-servicio-list1"><Link onClick={(e) =>handleClickDaw(e)} to="#daw"><span className="material-symbols-rounded">laptop_chromebook</span></Link></li>
+              <li className="texto-servicio-list2"><Link onClick={(e) =>handleClickQa(e)} to="#qa"><span className="material-symbols-outlined">mobile_friendly</span></Link></li>
+              <li className="texto-servicio-list3"><Link onClick={(e) =>handleClickAuto(e)} to="#auto"><span className="material-symbols-outlined">play_circle</span></Link></li>
           </ul>
           <hr className="separador-about2"/>
         </div>
@@ -88,7 +115,7 @@ export const Servicios = () => {
             </Link> 
           </p>
           </div>
-          <a className="arrow-servicios" href="#servicios-container"><i className='fas fa-arrow-circle-up'></i></a>
+          <Link className="arrow-servicios" to="#servicios-container" onClick={(e) =>handleClickArrow(e)}><i className='fas fa-arrow-circle-up'></i></Link>
       </section>
     </>
   );

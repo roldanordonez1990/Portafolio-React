@@ -3,6 +3,15 @@ import { proyectos } from "./datos/datos-proyectos";
 import { Link } from "react-router-dom";
 
 export const ListadoProyectos = ({limite}) => {
+
+  const handleClickArrow = (e) => {
+    const section = document.querySelector('#box-items');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <section id="box-items" className="box-items">
@@ -22,7 +31,7 @@ export const ListadoProyectos = ({limite}) => {
         })}
       </section>
       <div className="arrow">
-        <a href="#box-items"><i className='fas fa-arrow-circle-up'></i></a>
+        <Link to="#box-items" onClick={(e) =>handleClickArrow(e)}><i className='fas fa-arrow-circle-up'></i></Link>
       </div>
     </>
   );

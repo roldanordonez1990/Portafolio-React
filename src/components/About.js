@@ -3,41 +3,68 @@ import { Link } from "react-router-dom";
 
 export const About = () => {
 
-  const activarFormacion = (e) =>{
-    document.getElementById("formacion").style.color = "#ab8616";
-    document.getElementById("experiencia").style.color = "";
-    document.getElementById("skills").style.color = "";
-  }
+  const handleClickArrow = (e) => {
+    const section = document.querySelector('#inicio-about');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+  };
 
-  const activarExperiencia = (e) =>{
+  const handleClickExperiencia = (e) => {
+    const section = document.querySelector('#experiencia');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+
     document.getElementById("formacion").style.color = "";
     document.getElementById("experiencia").style.color = "#ab8616";
     document.getElementById("skills").style.color = "";
-  }
+  };
 
-  const activaSkills = (e) =>{
+  const handleClickFormacion = (e) => {
+    const section = document.querySelector('#formacion');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+
+    document.getElementById("formacion").style.color = "#ab8616";
+    document.getElementById("experiencia").style.color = "";
+    document.getElementById("skills").style.color = "";
+  };
+
+  const handleClickSkills = (e) => {
+    const section = document.querySelector('#skills');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+
     document.getElementById("formacion").style.color = "";
     document.getElementById("experiencia").style.color = "";
     document.getElementById("skills").style.color = "#ab8616";
-  }
+  };
+
   return (
     <>
       <section id="inicio-about" className="container-about">
         <ul className="servicio-list2">
           <li className="texto-servicio-list2">
-            <a href="#experiencia" onClick={(e) =>activarExperiencia(e)}>
+            <Link to="#experiencia" onClick={(e) =>handleClickExperiencia(e)}>
             <span className="material-symbols-outlined">work_history</span>
-            </a>
+            </Link>
           </li>
           <li className="texto-servicio-list1">
-            <a href="#formacion" onClick={(e) =>activarFormacion(e)}>
+            <Link to="#formacion" onClick={(e) =>handleClickFormacion(e)}>
             <span className="material-symbols-rounded">school</span>
-            </a>
+            </Link>
           </li>
           <li className="texto-servicio-list2">
-            <a href="#skills" onClick={(e) =>activaSkills(e)}>
+            <Link to="#skills" onClick={(e) =>handleClickSkills(e)}>
             <span className="material-symbols-outlined">workspace_premium</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <p className="p-cv">
@@ -48,12 +75,12 @@ export const About = () => {
           <div className="f2">
             <h3 id="experiencia">01. Experiencia en el sector IT</h3>
             <p>
-              -
               <strong>
                 <Link className="icon2 titulacion" to="https://www.nttdata.com/global/en/" target="_blank">
-                2022-Actualidad. NTT DATA:&nbsp;
+                2022-Actualidad. NTT DATA:
                 </Link>
               </strong>
+              <br/>
               <span className="titulacion">QA Tester y Especialista en Automatización de Pruebas</span> para el proyecto de banca digital&nbsp; 
               <strong><Link className="icon2 titulacion" to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html" target="_blank">
                  CaixabankNow.
@@ -69,12 +96,12 @@ export const About = () => {
               combinando herramientas como <span className="titulacion">Rally</span> y <span className="titulacion">Jira</span> para su organización, con el principal objetivo de maximizar la calidad en las entregas de las tareas al cliente.
             </p>
             <p>
-              -
               <strong>
               <Link className="icon2 titulacion" to="https://www.hostgreen.es/" target="_blank">
-                2021-2022. Hostgreen:&nbsp;
+                2021-2022. Hostgreen:
               </Link> 
               </strong>
+              <br/>
               <span className="titulacion">Desarrollador Web Full Stack</span> en el proyecto
               de comercio electrónico&nbsp;
               <strong>
@@ -180,7 +207,7 @@ export const About = () => {
           </div>
         </div>
         <div className="arrow-about" >
-          <a href="#inicio-about"><i className='fas fa-arrow-circle-up'></i></a>
+          <Link to="#inicio-about" onClick={(e) =>handleClickArrow(e)}><i className='fas fa-arrow-circle-up'></i></Link>
         </div>
       </section>
     </>

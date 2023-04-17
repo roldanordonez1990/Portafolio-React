@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, Route, HashRouter, Navigate } from "react-router-dom";
 import { Inicio } from '../components/Inicio';
 import { About } from '../components/About';
 import { Portafolio } from '../components/Portafolio';
@@ -19,7 +19,7 @@ import { Error } from '../components/Error';
 
 export const RouterPrincipal = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
     {/*Con este componente conseguimos que al cambiar de página no haya scroll*/}
     <ScrollTop/>
         {/*CABECERA Y NAVEGACIÓN*/}
@@ -42,6 +42,6 @@ export const RouterPrincipal = () => {
         </Routes>
         {/*Footer*/}
         <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ListadoProyectos } from "./ListadoProyectos";
 
 export const Inicio = () => {
+
   return (
     <>
       <section id="contenido-inicio" className="contenido-inicio">
