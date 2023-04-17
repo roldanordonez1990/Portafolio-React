@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 export const Portafolioweb = () => {
+
+  const handleClickArrow = (e) => {
+    const section = document.querySelector('#container-proyectos');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
     <div id="container-proyectos" className="container-proyectos">
@@ -35,7 +44,7 @@ export const Portafolioweb = () => {
       </ul>
       <h3 className="link-proyect">Acceso al código fuente: <Link className="icon2" to="https://github.com/roldanordonez1990/Portafolio-React" target="_blank">Github</Link></h3>
       <div className="arrow">
-        <a href="#container-proyectos"><i className='fas fa-arrow-circle-up'></i></a>
+        <Link to="#container-proyectos" onClick={(e) =>handleClickArrow(e)}><i className='fas fa-arrow-circle-up'></i></Link>
       </div>
     </div>
     </>

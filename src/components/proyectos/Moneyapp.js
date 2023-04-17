@@ -4,6 +4,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 
 export const Moneyapp = () => {
+
+  const handleClickArrow = (e) => {
+    const section = document.querySelector('#container-proyectos');
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
     <div id="container-proyectos" className="container-proyectos">
@@ -48,7 +57,7 @@ export const Moneyapp = () => {
       <h3 className="link-proyect">Acceso al código fuente: <Link className="icon2" to="https://github.com/roldanordonez1990/MoneyApp-Angular" target="_blank">Frontend</Link> - 
       <Link className="icon2" to="https://github.com/roldanordonez1990/MoneyApp-backend" target="_blank"> Backend</Link></h3>
       <div className="arrow">
-        <a href="#container-proyectos"><i className='fas fa-arrow-circle-up'></i></a>
+        <Link to="#container-proyectos" onClick={(e) =>handleClickArrow(e)}><i className='fas fa-arrow-circle-up'></i></Link>
       </div>
     </div>
     </>
