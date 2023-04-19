@@ -29,7 +29,9 @@ export const RouterPrincipal = () => {
             <Route path="/" element={<Navigate to="/inicio"/>} />
             <Route path="/inicio" element={<Inicio />} />
             <Route path="/about" element={<About />}/>
+            <Route path="/about/:id" element={<About/>}/>
             <Route path="/servicios" element={<Servicios/>}/>
+            <Route path="/servicios/:id" element={<Servicios/>}/>
             <Route path="/portafolio" element={<Portafolio />} />
             <Route path="/elgranizo" element={<Granizo/>}/>
             <Route path="/moneyapp" element={<Moneyapp/>}/>

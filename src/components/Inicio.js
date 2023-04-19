@@ -44,19 +44,19 @@ export const Inicio = () => {
       <h2 className="titulo-boxs1">¿Qué servicios ofrece mi trabajo?</h2>
       <article className="cards">
           <div className="card">
-            <Link to="/servicios">
+            <Link to="/servicios/daw">
             <span className="material-symbols-rounded">laptop_chromebook</span>
             <span className="texto-box1">Desarrollo Web</span>
             </Link>
           </div>
           <div className="card">
-            <Link to="/servicios">
+            <Link to="/servicios/qa">
             <span className="material-symbols-outlined">mobile_friendly</span>
             <span className="texto-box2">QA</span>
             </Link>
           </div>
           <div className="card">
-            <Link to="/servicios">
+            <Link to="/servicios/auto">
             <span className="material-symbols-outlined">play_circle</span>
             <span className="texto-box3">Automatización</span>
             </Link>
@@ -66,7 +66,7 @@ export const Inicio = () => {
       <section className="experiencia-container">    
             <div className="exp-box">
               <div className="item-mask1">
-                <Link to="/about">
+                <Link to="/about/hostgreen">
                 <img src="/images/hostgreen1.png" alt="ntt" />
                 </Link>
               </div>
@@ -79,7 +79,7 @@ export const Inicio = () => {
             </div>
             <div className="exp-box">
               <div className="item-mask1">
-                <Link to="/about">
+                <Link to="/about/nttdata">
                 <img src="/images/ntt.png" alt="ntt" />
                 </Link>
               </div>

@@ -1,7 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 
 export const Servicios = () => {
+  //código con el cual hemos conseguido anclar enlaces desde otra página
+  const { id } = useParams();
+  
+  useEffect(() => {
+    switch(id){
+      case "daw":
+      const section1 = document.querySelector('#daw');
+        window.scrollTo({
+        top: section1.offsetTop,
+        behavior: 'smooth',
+        });
+      document.getElementById("daw").style.color = "#ab8616";
+      break;
+
+      case "qa":
+      const section2 = document.querySelector('#qa');
+        window.scrollTo({
+        top: section2.offsetTop,
+        behavior: 'smooth',
+        });
+      document.getElementById("qa").style.color = "#ab8616";
+      break;
+
+      case "auto":
+      const section3 = document.querySelector('#auto');
+        window.scrollTo({
+        top: section3.offsetTop,
+        behavior: 'smooth',
+        });
+      document.getElementById("auto").style.color = "#ab8616";
+      break;
+
+      default:
+    }
+    
+  }, [id]);
+  //código con el cual hemos conseguido anclar enlaces desde otra página
 
   const handleClickArrow = (e) => {
     const section = document.querySelector('#servicios-container');
@@ -61,7 +98,7 @@ export const Servicios = () => {
           <div className="servicio-div-texto2">
             <h3 id="daw">Desarrollo Web</h3> 
             <p className="texto-servicios2">
-            - Creación de páginas web estáticas y dinámicas.</p>
+            - Creación de páginas web estáticas y dinámicas.{id}</p>
             <p className="texto-servicios2">
             - Diseño y maquetación.
             </p>
