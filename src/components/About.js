@@ -160,13 +160,13 @@ export const About = () => {
               -
               <strong>
                <span className="titulacion">2014-2015. Máster en Desarrollo Territorial Sostenible </span> </strong> por
-                la <span className="titulacion">por la UAM.</span>&nbsp;
+                la <span className="titulacion">UAM.</span>&nbsp;
             </p>
             <p>
               -
               <strong>
                <span className="titulacion">2008-2013. Licenciado en Geografía </span> </strong> por
-                la <span className="titulacion">por la UMA.</span>&nbsp;
+                la <span className="titulacion">UMA.</span>&nbsp;
             </p>
             <hr className="separador-about"/>
           </div>
