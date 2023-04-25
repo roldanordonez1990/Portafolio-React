@@ -98,7 +98,7 @@ export const Servicios = () => {
           <div className="servicio-div-texto2">
             <h3 id="daw">Desarrollo Web</h3> 
             <p className="texto-servicios2">
-            - Creación de páginas web estáticas y dinámicas.{id}</p>
+            - Creación de páginas web estáticas y dinámicas.</p>
             <p className="texto-servicios2">
             - Diseño y maquetación.
             </p>
