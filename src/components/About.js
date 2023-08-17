@@ -186,6 +186,10 @@ export const About = () => {
             <div className="container-skills">
               <div className="skills js">75%</div>
             </div>
+            <span>Node.js</span>
+            <div className="container-skills">
+              <div className="skills node">50%</div>
+            </div>
             <span>Java</span>
             <div className="container-skills">
               <div className="skills java">70%</div>
@@ -197,6 +201,10 @@ export const About = () => {
             <span>SQL</span>
             <div className="container-skills">
               <div className="skills sql">75%</div>
+            </div>
+            <span>Mongo DB</span>
+            <div className="container-skills">
+              <div className="skills mongo">60%</div>
             </div>
             <span>Git</span>
             <div className="container-skills">
@@ -213,15 +221,15 @@ export const About = () => {
             </div>
             <span>Selenium</span>
             <div className="container-skills">
-              <div className="skills selenium">70%</div>
+              <div className="skills selenium">75%</div>
             </div>
             <span>Appium</span>
             <div className="container-skills">
-              <div className="skills appium">65%</div>
+              <div className="skills appium">70%</div>
             </div>
             <span>React</span>
             <div className="container-skills">
-              <div className="skills react">40%</div>
+              <div className="skills react">50%</div>
             </div>
             <span>Angular</span>
             <div className="container-skills">

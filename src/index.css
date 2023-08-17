@@ -522,6 +522,9 @@ h2 .name{
 .js {width: 75%; background: linear-gradient(
   90deg,
   #f5f5f5,#ede02d);}
+.node {width: 50%; background: linear-gradient(
+  90deg,
+  #f5f5f5,#76ae64);}
 .php {width: 70%; background: linear-gradient(
   90deg,
   #f5f5f5,#947af0);}
@@ -531,16 +534,16 @@ h2 .name{
 .spring{width: 55%; background: linear-gradient(
   90deg,
   #f5f5f5,#ab8616);}
-.react{width: 40%; background: linear-gradient(
+.react{width: 50%; background: linear-gradient(
   90deg,
   #f5f5f5,#ab8616);}
 .angular{width: 40%; background: linear-gradient(
   90deg,
   #f5f5f5,#ab8616);}
-.selenium{width: 70%; background: linear-gradient(
+.selenium{width: 75%; background: linear-gradient(
   90deg,
   #f5f5f5,#ab8616);}
-.appium{width: 65%; background: linear-gradient(
+.appium{width: 70%; background: linear-gradient(
   90deg,
   #f5f5f5,#ab8616);}
 .laravel{width: 40%; background: linear-gradient(
@@ -549,6 +552,9 @@ h2 .name{
 .sql{width: 75%; background: linear-gradient(
   90deg,
   #f5f5f5,#0b577a);}
+.mongo{width: 60%; background: linear-gradient(
+  90deg,
+  #f5f5f5,#07ac4f);}
 .git{width: 70%; background: linear-gradient(
   90deg,
   #f5f5f5,#333631);}
