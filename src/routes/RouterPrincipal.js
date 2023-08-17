@@ -15,6 +15,7 @@ import { Noticiero } from '../components/proyectos/Noticiero';
 import { Videojuego } from '../components/proyectos/Videojuego';
 import { Portafolioweb } from '../components/proyectos/Portafolioweb';
 import { Error } from '../components/Error';
+import { Blog } from '../components/proyectos/Blog';
 
 
 export const RouterPrincipal = () => {
@@ -39,6 +40,7 @@ export const RouterPrincipal = () => {
             <Route path="/noticiero" element={<Noticiero/>}/>
             <Route path="/portafolioweb" element={<Portafolioweb/>}/>
             <Route path="/videojuego" element={<Videojuego />}/>
+            <Route path="/blog" element={<Blog/>}/>
             <Route path="/contacto" element={<Contacto />}/>
             <Route path="*" element={<Error/>}/>
         </Routes>

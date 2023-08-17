@@ -1,5 +1,13 @@
 export const proyectos = [
     {
+        "id": "blog",
+        "nombre": "Blog con MERN Stack",
+        "imagen": "blog",
+        "url": "http://elgranizo.es/index.php",
+        "tecnologias": "MongoDB, Express, React, Node.js, Vite, JSX",
+        "categoria": "Desarrollo Web"
+    },
+    {
         "id": "elgranizo",
         "nombre": "Web Meteorológica",
         "imagen": "mapa3",
@@ -24,19 +32,11 @@ export const proyectos = [
         "categoria": "Desarrollo Web"
     },
     {
-        "id": "noticiero",
-        "nombre": "Web de noticias",
-        "imagen": "noticiero",
-        "url": "http://elgranizo.es/index.php",
-        "tecnologias": "Laravel, PHP, HTML5, CSS, MySQL",
-        "categoria": "Desarrollo Web"
-    },
-    {
         "id": "portafolioweb",
         "nombre": "Portafolio Web",
         "imagen": "portafolio",
         "url": "http://elgranizo.es/index.php",
-        "tecnologias": "React, JS, CSS, HTML5",
+        "tecnologias": "React, JS, CSS, JSX",
         "categoria": "Desarrollo Web"
     },
     {
@@ -47,4 +47,12 @@ export const proyectos = [
         "tecnologias": "JS, CSS, HTML5",
         "categoria": "Desarrollo Web"
     },
+    {
+        "id": "noticiero",
+        "nombre": "Web de noticias",
+        "imagen": "noticiero",
+        "url": "http://elgranizo.es/index.php",
+        "tecnologias": "Laravel, PHP, HTML5, CSS, MySQL",
+        "categoria": "Desarrollo Web"
+    }
 ]
