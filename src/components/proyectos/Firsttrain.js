@@ -16,7 +16,7 @@ export const Firsttrain = () => {
   return (
     <>
     <div id="container-proyectos" className="container-proyectos">
-      <h2 className="container-proyectos-titulo">Aplicación deportiva <span className='name'>"Firsttrain"</span></h2>
+      <h2 className="container-proyectos-titulo">Aplicación Deportiva <span className='name'>"Firsttrain"</span></h2>
       <p className='p-container-proyectos'>Aplicación para la gestión de reservas en las actividades que ofrece el centro deportivo.</p>
       <Carousel>
         <div >

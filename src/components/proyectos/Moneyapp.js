@@ -16,7 +16,7 @@ export const Moneyapp = () => {
   return (
     <>
     <div id="container-proyectos" className="container-proyectos">
-      <h2 className="container-proyectos-titulo">Aplicación de control de gastos <span className='name'>"Moneyapp"</span></h2>
+      <h2 className="container-proyectos-titulo">Aplicación de Control de Gastos <span className='name'>"Moneyapp"</span></h2>
       <p className='p-container-proyectos'>Aplicación de escritorio para llevar un control diario de gastos y envío de dinero a otros usuarios.</p>
       <Carousel>
         <div >

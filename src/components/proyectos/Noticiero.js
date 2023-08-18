@@ -16,7 +16,7 @@ export const Noticiero = () => {
   return (
     <>
     <div id="container-proyectos" className="container-proyectos">
-      <h2 className="container-proyectos-titulo">Web de noticias <span className='name'>"Noticiero Online"</span></h2>
+      <h2 className="container-proyectos-titulo">Web de Noticias <span className='name'>"Noticiero Online"</span></h2>
       <p className='p-container-proyectos'>Página web para la publicación y lectura de noticias nacionales e internacionales. </p>
       <Carousel>
         <div >

@@ -17,7 +17,7 @@ export const proyectos = [
     },
     {
         "id": "moneyapp",
-        "nombre": "Aplicación de control de gastos",
+        "nombre": "Aplicación de Control de Gastos",
         "imagen": "moneyapp",
         "url": "http://elgranizo.es/index.php",
         "tecnologias": "Angular, Spring Boot, Typescript, Java, SCSS, HTML5, MySQL",
@@ -25,7 +25,7 @@ export const proyectos = [
     },
     {
         "id": "firsttrain",
-        "nombre": "Aplicación deportiva",
+        "nombre": "Aplicación Deportiva",
         "imagen": "firsttrain",
         "url": "http://elgranizo.es/index.php",
         "tecnologias": "Angular, Spring Boot, Typescript, Java, SCSS, HTML5, MySQL", 
@@ -49,7 +49,7 @@ export const proyectos = [
     },
     {
         "id": "noticiero",
-        "nombre": "Web de noticias",
+        "nombre": "Web de Noticias",
         "imagen": "noticiero",
         "url": "http://elgranizo.es/index.php",
         "tecnologias": "Laravel, PHP, HTML5, CSS, MySQL",

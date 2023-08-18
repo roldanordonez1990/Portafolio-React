@@ -16,10 +16,10 @@ export const Blog = () => {
     <>
       <div id="container-proyectos" className="container-proyectos">
         <h2 className="container-proyectos-titulo">
-          Proyecto de un blog con Vite. <span className="name">"Blog de artículos"</span>
+          Proyecto de un blog con React - Vite. <span className="name">"Blog de artículos"</span>
         </h2>
         <p className="p-container-proyectos">
-          Aplicación web completa usando MERN stack (MongoDB, Express, React y Node.js)
+          Aplicación web completa usando MERN Stack (MongoDB, Express, React y Node.js)
         </p>
         <Carousel>
           <div>
