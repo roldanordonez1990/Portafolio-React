@@ -16,10 +16,12 @@ export const Blog = () => {
     <>
       <div id="container-proyectos" className="container-proyectos">
         <h2 className="container-proyectos-titulo">
-          Proyecto de un blog con React - Vite. <span className="name">"Blog de artículos"</span>
+          Proyecto de un blog con React - Vite.{" "}
+          <span className="name">"Blog de artículos"</span>
         </h2>
         <p className="p-container-proyectos">
-          Aplicación web completa usando MERN Stack (MongoDB, Express, React y Node.js)
+          Aplicación web completa usando MERN Stack (MongoDB, Express, React y
+          Node.js)
         </p>
         <Carousel>
           <div>
@@ -59,12 +61,15 @@ export const Blog = () => {
           usuario de forma asíncrona, incluyendo una conexión con una base de
           datos no relacional haciendo uso de{" "}
           <span className="titulacion">Mongo DB</span> y de la librería{" "}
-          <span className="titulacion">
-            Mongoose{" "}
-          </span> para establecer la conexión.
-          Para las peticiones <span className="titulacion">Ajax</span> a la{" "}
-          <span className="titulacion">API Rest</span>, se utiliza el{" "}
+          <span className="titulacion">Mongoose </span> para establecer la
+          conexión. Para las peticiones <span className="titulacion">Ajax</span>{" "}
+          a la <span className="titulacion">API Rest</span>, se utiliza el{" "}
           <span className="titulacion"> framework Express.</span>
+        </p>
+        <p>
+          El diseño y la maquetación presentan un aspecto bastante básico, en el
+          cual no he prestado mucho interés. La prioridad era la puesta en
+          práctica de las diferentes tecnologías que forman la aplicación así como su funcionalidad.
         </p>
         <p>
           Todas las funciones de este proyecto fueron realizadas de manera
