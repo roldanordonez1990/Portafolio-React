@@ -270,7 +270,7 @@ h2 .name{
 .items:hover img{
     /*Mejor agrandar con scale porque no ocupa el espacio que en teoría se agrandaría usando otras scalas como subirle el width*/
     scale: 1.6;
-    transform: translateX(-80px);
+    transform: translateX(-15%);
     opacity: 100%;
     margin-right: 35%;
 }
