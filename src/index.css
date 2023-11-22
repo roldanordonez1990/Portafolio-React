@@ -185,39 +185,6 @@ h2 .name{
     display: flex;
 }
 
-.items{
-    /*flex basic da % al tamaño del item. Luego con el flex-grow 1 se reparte el espacio por igual*/
-    flex-basis: 35%;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 40px;
-    margin-top: 10px;
-    flex-grow: 1;
-    box-shadow: 0px 2px 10px #b8b8b8;
-    transition: all 500ms;
-    /*Animaciones. Grow items puede ser cualquier nombre que queramos. Es para hacer referencia*/
-    animation: grow-items linear both;
-    /*view() es una propiedad para cuando se vea el items en el navegador*/
-    animation-timeline: view();
-    animation-timing-function: ease;
-    animation-range: entry 10% cover 30%;
-    
-}
-
-@keyframes grow-items {
-  from {
-    opacity: 0;
-    translate: 0 80px;
-    scale: .5;
-
-  }
-
-  to {
-    opacity: 1;
-    translate: 0 0;
-    scale: 1;
-  }
-}
 
 /*Carousel*/
 .container-proyectos{
@@ -261,6 +228,13 @@ h2 .name{
    margin-bottom: 33px;
  }
 
+ .items img{
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  transition: all 500ms;
+}
+
 .item-mask{
     overflow: hidden;
     /*Esto hace que no sobresalga nada de la máscara. Por eso al aumentar la img hace zoom sin salir*/
@@ -278,13 +252,6 @@ h2 .name{
 .items:hover{
     box-shadow:  inset 0 -3em 3em rgba(0,0,0,0.1),
     0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
-
-.items img{
-    width: 100%;
-    height: 100%;
-    opacity: 50%;
-    transition: all 500ms;
 }
 
 .items a{
@@ -307,6 +274,40 @@ h2 .name{
     display: block;
     text-align: center;
     align-items: center;
+}
+
+.items{
+  /*flex basic da % al tamaño del item. Luego con el flex-grow 1 se reparte el espacio por igual*/
+  flex-basis: 35%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  flex-grow: 1;
+  box-shadow: 0px 2px 10px #b8b8b8;
+  transition: all 500ms;
+  /*Animaciones. Grow items puede ser cualquier nombre que queramos. Es para hacer referencia*/
+  animation: grow-items linear both;
+  /*view() es una propiedad para cuando se vea el items en el navegador*/
+  animation-timeline: view();
+  animation-timing-function: ease;
+  animation-range: entry 10% cover 30%;
+  
+}
+
+@keyframes grow-items {
+from {
+  opacity: 0;
+  translate: 0 80px;
+  scale: .5;
+
+}
+
+to {
+  opacity: 1;
+  translate: 0 0;
+  scale: 1;
+}
 }
 
 .titulo-boxs1,
