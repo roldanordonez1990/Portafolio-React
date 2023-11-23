@@ -286,27 +286,28 @@ h2 .name{
   flex-grow: 1;
   box-shadow: 0px 2px 10px #b8b8b8;
   transition: all 500ms;
-  /*Animaciones. Grow items puede ser cualquier nombre que queramos. Es para hacer referencia*/
-  animation: grow-items linear both;
-  /*view() es una propiedad para cuando se vea el items en el navegador*/
+  /*Animaciones. growing puede ser cualquier nombre que queramos. Es para hacer referencia*/
   animation-timeline: view();
+  animation-name: growing;
+  animation-fill-mode: both;
+  /*view() es una propiedad para cuando se vea el items en el navegador*/
   animation-timing-function: ease;
   animation-range: entry 10% cover 30%;
-  
+  animation-duration: 2ms;
 }
 
-@keyframes grow-items {
-from {
-  opacity: 0;
-  translate: 0 80px;
-  scale: .5;
-}
+@keyframes growing {
+  from {
+    opacity: 0;
+    translate: 0 80px;
+    scale: .5;
+  }
 
-to {
-  opacity: 1;
-  translate: 0 0;
-  scale: 1;
-}
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
 }
 
 .titulo-boxs1,
