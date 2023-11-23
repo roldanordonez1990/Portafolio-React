@@ -1,8 +1,6 @@
 import React from "react";
 import { proyectos } from "./datos/datos-proyectos";
 import { Link } from "react-router-dom";
-import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
-
 
 export const ListadoProyectos = ({limite}) => {
 
