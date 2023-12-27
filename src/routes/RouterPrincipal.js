@@ -16,6 +16,7 @@ import { Videojuego } from '../components/proyectos/Videojuego';
 import { Portafolioweb } from '../components/proyectos/Portafolioweb';
 import { Error } from '../components/Error';
 import { Blog } from '../components/proyectos/Blog';
+import { Rrss } from '../components/proyectos/Rrss';
 
 
 export const RouterPrincipal = () => {
@@ -41,6 +42,7 @@ export const RouterPrincipal = () => {
             <Route path="/portafolioweb" element={<Portafolioweb/>}/>
             <Route path="/videojuego" element={<Videojuego />}/>
             <Route path="/blog" element={<Blog/>}/>
+            <Route path="/rrss" element={<Rrss />}/>
             <Route path="/contacto" element={<Contacto />}/>
             <Route path="*" element={<Error/>}/>
         </Routes>
