@@ -138,6 +138,9 @@ export const Servicios = () => {
             - Testeo automático de aplicaciones web y móviles.
             </p>
             <p className="texto-servicios2">
+            - Testeo automático de API Rest
+            </p>
+            <p className="texto-servicios2">
             - Diseño y creación de planes y casos de prueba automatizables.
             </p>
             <p className="texto-servicios2">
