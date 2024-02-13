@@ -133,19 +133,17 @@ export const About = () => {
                       CaixabankNow.
                     </Link>
                   </strong>
-                  &nbsp;Garantizar una mayor calidad del
-                  software tanto en la versión web como en la aplicación móvil,
-                  combinando pruebas funcionales integradas, así
-                  como en la automatización de las mismas por medio de
-                  herramientas como{" "}
+                  &nbsp;Garantizar una mayor calidad del software tanto en la
+                  versión web como en la aplicación móvil, combinando pruebas
+                  funcionales integradas, así como en la automatización de las
+                  mismas por medio de herramientas como{" "}
                   <span className="titulacion">
                     Selenium Web Driver y Appium
                   </span>{" "}
                   en <span className="titulacion">Java</span>. La metodología
-                  del trabajo
-                  diario es <span className="titulacion"> Kanban</span>,
-                  combinando herramientas como{" "}
-                  <span className="titulacion">Rally</span> y{" "}
+                  del trabajo diario es{" "}
+                  <span className="titulacion"> Kanban</span>, combinando
+                  herramientas como <span className="titulacion">Rally</span> y{" "}
                   <span className="titulacion">Jira</span> para su organización,
                   con el principal objetivo de maximizar la calidad en las
                   entregas de las tareas al cliente.
@@ -192,32 +190,38 @@ export const About = () => {
             <h3 id="formacion">02. Formación</h3>
             <ul>
               <li>
-                <strong>
+                <p>
+                  <strong>
+                    <span className="titulacion">
+                      2019-2021. CFGS en Desarrollo de Aplicaciones Web (DAW)
+                    </span>{" "}
+                  </strong>{" "}
+                  por el{" "}
                   <span className="titulacion">
-                    2019-2021. CFGS en Desarrollo de Aplicaciones Web (DAW)
-                  </span>{" "}
-                </strong>{" "}
-                por el{" "}
-                <span className="titulacion">
-                  IES Marqués de Comares (Lucena, Córdoba).
-                </span>
-                &nbsp;
+                    IES Marqués de Comares (Lucena, Córdoba).
+                  </span>
+                  &nbsp;
+                </p>
               </li>
               <li>
-                <strong>
-                  <span className="titulacion">
-                    2014-2015. Máster en Desarrollo Territorial Sostenible
-                  </span>{" "}
-                </strong>{" "}
-                por la <span className="titulacion">UAM.</span>&nbsp;
+                <p>
+                  <strong>
+                    <span className="titulacion">
+                      2014-2015. Máster en Desarrollo Territorial Sostenible
+                    </span>{" "}
+                  </strong>{" "}
+                  por la <span className="titulacion">UAM.</span>&nbsp;
+                </p>
               </li>
               <li>
-                <strong>
-                  <span className="titulacion">
-                    2008-2013. Licenciado en Geografía{" "}
-                  </span>{" "}
-                </strong>{" "}
-                por la <span className="titulacion">UMA.</span>&nbsp;
+                <p>
+                  <strong>
+                    <span className="titulacion">
+                      2008-2013. Licenciado en Geografía{" "}
+                    </span>{" "}
+                  </strong>{" "}
+                  por la <span className="titulacion">UMA.</span>&nbsp;
+                </p>
               </li>
             </ul>
 
@@ -300,7 +304,7 @@ export const About = () => {
         </div>
         <div className="about-box2">
           <div className="f2">
-            <h3 id="skills">04. Habilidaes/Frameworks</h3>
+            <h3 id="skills">04. Habilidades/Frameworks</h3>
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
