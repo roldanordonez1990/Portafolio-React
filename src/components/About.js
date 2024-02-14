@@ -304,7 +304,7 @@ export const About = () => {
         </div>
         <div className="about-box2">
           <div className="f2">
-            <h3 id="skills">04. Habilidades/Frameworks</h3>
+            <h3 id="skills">04. Habilidades/Frameworks y Librerías</h3>
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
