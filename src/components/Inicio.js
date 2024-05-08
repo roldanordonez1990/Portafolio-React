@@ -20,7 +20,7 @@ export const Inicio = () => {
               comercio electrónico y del sector bancario en el ámbito nacional.
             </p>
             <p>
-            Actualmente como <strong>QA Automation</strong>, he desarrollado habilidades sólidas en la creación y ejecución de pruebas automatizadas, garantizando la calidad y fiabilidad del software.
+            Actualmente como <strong>QA Automation</strong>, he desarrollado habilidades sólidas en la creación y ejecución de pruebas automatizadas, garantizando la calidad del software.
             </p>
             <p className="ajustepBtn">
             Me interesan las últimas tendencias en tecnología y busco constantemente nuevos desafíos para lograr mis objetivos personales y profesionales 
