@@ -121,7 +121,7 @@ export const About = () => {
                   </strong>
                   <br />
                   <span className="titulacion">
-                    QA Tester y Especialista en Automatización de Pruebas
+                    QA Automation y Tester funcional
                   </span>{" "}
                   para el proyecto de banca digital&nbsp;
                   <strong>
@@ -138,7 +138,7 @@ export const About = () => {
                   funcionales integradas, así como en la automatización de las
                   mismas por medio de herramientas como{" "}
                   <span className="titulacion">
-                    Selenium Web Driver y Appium
+                    Selenium WebDriver y Appium
                   </span>{" "}
                   en <span className="titulacion">Java</span>. La metodología
                   del trabajo diario es{" "}

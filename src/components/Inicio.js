@@ -16,13 +16,11 @@ export const Inicio = () => {
             <hr className="separador-nombre" />
             <p>
               <strong>Desarrollador de Aplicaciones Web</strong> y
-              <strong> QA Tester</strong>. Tengo experiencia en proyectos de
+              <strong> QA Automation | Tester</strong>. Tengo experiencia en proyectos de
               comercio electrónico y del sector bancario en el ámbito nacional.
             </p>
             <p>
-              Actualmente trabajo como <strong>QA Tester</strong> y
-              <strong> Especialista en Automatización de Pruebas</strong> con categoría <span className="correo-personal">Testing
-              Specialist</span>, en remoto, desde Málaga (España).
+            Actualmente como <strong>QA Automation</strong>, he desarrollado habilidades sólidas en la creación y ejecución de pruebas automatizadas, garantizando la calidad y fiabilidad del software.
             </p>
             <p className="ajustepBtn">
             Me interesan las últimas tendencias en tecnología y busco constantemente nuevos desafíos para lograr mis objetivos personales y profesionales 
@@ -83,11 +81,11 @@ export const Inicio = () => {
                 <img src="/images/ntt.png" alt="ntt" />
                 </Link>
               </div>
-                <span className="titulo-exp"><strong>QA Tester | Automatización</strong></span>
+                <span className="titulo-exp"><strong>QA Automation | Tester</strong></span>
                 <br/>
                 <span className="texto-tecnologias">Proyecto: CaixaBankNow (2022-Actualidad)</span>
                 <br/>
-                <span className="texto-tecnologias">Java: Selenium Web Driver/Appium</span>
+                <span className="texto-tecnologias">Java: Selenium WebDriver | Appium</span>
                 <hr className="hr-exp"/>
             </div>
       </section>
