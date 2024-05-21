@@ -65,7 +65,7 @@ export const Firsttrain = () => {
         <li>TypeScript</li>
         <li>Spring Boot</li>
         <li>Java</li>
-        <li>MySQL</li>
+        <li>SQL</li>
       </ul>
       <h3 className="link-proyect">Acceso al código fuente: <Link className="icon2" to="https://github.com/roldanordonez1990/FirstTrain-Angular" target="_blank">Frontend</Link> - 
       <Link className="icon2" to="https://github.com/roldanordonez1990/FirstTrain-Backend" target="_blank"> Backend</Link></h3>

@@ -45,7 +45,7 @@ export const Noticiero = () => {
         <li>CSS3</li>
         <li>Laravel</li>
         <li>PHP</li>
-        <li>MySQL</li>
+        <li>SQL</li>
       </ul>
       <h3 className="link-proyect">Acceso al código fuente: <Link className="icon2" to="https://github.com/roldanordonez1990/Noticiero-Laravel" target="_blank">Github</Link></h3>
       <div className="arrow">

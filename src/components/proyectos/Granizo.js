@@ -61,7 +61,7 @@ export const Granizo = () => {
         <li>SCSS</li>
         <li>PHP</li>
         <li>JavaScript</li>
-        <li>MySQL</li>
+        <li>SQL</li>
         <li>API: <Link className="icon2" to="https://openweathermap.org/api" target="_blank">Openweathermap</Link></li>
         <li>API: <Link className="icon2" to="https://developer.tomtom.com/" target="_blank">TomTom</Link></li>
       </ul>

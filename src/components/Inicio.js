@@ -72,7 +72,7 @@ export const Inicio = () => {
                 <br/>
                 <span className="texto-tecnologias">Proyecto: Adivin (2021-2022)</span>
                 <br/>
-                <span className="texto-tecnologias">PHP, HTML5, CSS3, JavaScript y MySQL</span>
+                <span className="texto-tecnologias">PHP, HTML5, CSS3, JavaScript y SQL</span>
                 <hr className="hr-exp"/>
             </div>
             <div className="exp-box">

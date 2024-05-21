@@ -12,7 +12,7 @@ export const proyectos = [
         "nombre": "Web Meteorológica",
         "imagen": "mapa3",
         "url": "http://elgranizo.es/index.php",
-        "tecnologias": "PHP, JS, SCSS, HTML5, MySQL",
+        "tecnologias": "PHP, JS, SCSS, HTML5, SQL",
         "categoria": "Desarrollo Web"
     },
     {
@@ -28,7 +28,7 @@ export const proyectos = [
         "nombre": "Aplicación de Control de Gastos",
         "imagen": "moneyapp",
         "url": "http://elgranizo.es/index.php",
-        "tecnologias": "Angular, Spring Boot, Typescript, Java, SCSS, HTML5, MySQL",
+        "tecnologias": "Angular, Spring Boot, Typescript, Java, SCSS, HTML5, SQL",
         "categoria": "Desarrollo Web"
     },
     {
@@ -36,7 +36,7 @@ export const proyectos = [
         "nombre": "Aplicación Deportiva",
         "imagen": "firsttrain",
         "url": "http://elgranizo.es/index.php",
-        "tecnologias": "Angular, Spring Boot, Typescript, Java, SCSS, HTML5, MySQL", 
+        "tecnologias": "Angular, Spring Boot, Typescript, Java, SCSS, HTML5, SQL", 
         "categoria": "Desarrollo Web"
     },
     {
@@ -60,7 +60,7 @@ export const proyectos = [
         "nombre": "Web de Noticias",
         "imagen": "noticiero",
         "url": "http://elgranizo.es/index.php",
-        "tecnologias": "Laravel, PHP, HTML5, CSS, MySQL",
+        "tecnologias": "Laravel, PHP, HTML5, CSS, SQL",
         "categoria": "Desarrollo Web"
     }
 ]
