@@ -13,6 +13,8 @@
 
 public/images
 
+src/helpers/Constantes.jsx
+
 # misc
 .DS_Store
 .env.local

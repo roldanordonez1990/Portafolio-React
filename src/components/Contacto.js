@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import emailjs from "emailjs-com";
 import { VentanaModal } from "./VentanaModal";
 import { Link } from "react-router-dom";
+import ReCAPTCHA from 'react-google-recaptcha';
+import { Constantes } from "../helpers/Constantes";
 /*Para instalar emiljs, añadir el comando: npm i emailjs-com*/
 
 export const Contacto = () => {
@@ -13,7 +15,20 @@ export const Contacto = () => {
   const [loading, setLoading] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [errorSend, setErrorSend] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 525);
 
+  //useEffect sólo para el recaptcha
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 525);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const changeNombre = (e)=>{
     let dato = e.target.value;
@@ -78,6 +93,7 @@ export const Contacto = () => {
           setHabilitado1(false);
           setHabilitado2(false);
           setHabilitado3(false);
+          setCaptchaValue(null)
           document.getElementById("email").style.border = "";
 
         }else{
@@ -173,8 +189,13 @@ export const Contacto = () => {
             }
             <input onChange={(e) => changeNombre(e)} type="text" className={habilitado1 ? "nombre2 entry" : "nombre entry" } placeholder="Nombre completo" name="nombre"/>
             <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
-            <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/>
-            <span><input type="submit" className={habilitado1 && habilitado2 && habilitado3 && !emailError ? "submit-999" : "submit-disabled"} value="Enviar"/></span>
+            <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/> 
+            <span><input type="submit" className={habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? "submit-999" : "submit-disabled"} value="Enviar"/></span>
+            <div className="recaptcha">
+            <ReCAPTCHA
+            sitekey={Constantes.key_recaptcha_pro} size={isMobile ? "compact" : ""}
+            onChange={(action) => setCaptchaValue(action)}/>
+            </div>
           </form>
         </div>
       </div>

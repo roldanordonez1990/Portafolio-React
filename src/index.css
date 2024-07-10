@@ -199,6 +199,14 @@ h2 .name {
   align-items: center;
 }
 
+.recaptcha {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .thumbs-wrapper ul {
   margin-right: 30px;
 }
@@ -1338,6 +1346,7 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 525px) {
+
   .thumbs-wrapper {
     display: none;
   }
@@ -1384,6 +1393,7 @@ textarea::placeholder {
   .shadow:nth-child(4) {
     left: 40%;
   }
+ 
 }
 
 @media screen and (max-width: 330px) {
