@@ -119,11 +119,13 @@ export const Contacto = () => {
     if(respuestaOk){
       setTimeout(() => {
           setRespuestaOk(false);
+          window.location.reload();
       }, "15000");
     }
     //función para cerrar el modal poniendo la respuesta a false
     const closeModal = () => {
       setRespuestaOk(false)
+      window.location.reload();
     }
 
   return (
