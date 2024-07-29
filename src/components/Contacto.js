@@ -79,7 +79,7 @@ export const Contacto = () => {
     var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,5})+$/;
     var emailInput = document.getElementById("email");
 
-    if(validEmail.test(emailInput.value) && habilitado1 && habilitado2 && habilitado3){
+    if(validEmail.test(emailInput.value) && habilitado1 && habilitado2 && habilitado3 && captchaValue){
       
       setLoading(true);
       e.preventDefault();
@@ -192,7 +192,11 @@ export const Contacto = () => {
             <input onChange={(e) => changeNombre(e)} type="text" className={habilitado1 ? "nombre2 entry" : "nombre entry" } placeholder="Nombre completo" name="nombre"/>
             <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
             <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/> 
-            <span><input type="submit" className={habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? "submit-999" : "submit-disabled"} value="Enviar"/></span>
+            {habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? (
+              <span><input type="submit" className="submit-999" value="Enviar"/></span>
+            )
+              : ""
+            }
             <div className="recaptcha">
             <ReCAPTCHA
             sitekey={Constantes.key_recaptcha_pro} size={isMobile ? "compact" : ""}
