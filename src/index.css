@@ -307,7 +307,7 @@ h2 .name {
 .titulo-boxs1,
 .titulo-boxs2,
 .titulo-proyects,
-.f2 {
+.ijo{
   animation-timeline: view();
   animation-name: growing;
   animation-fill-mode: both;

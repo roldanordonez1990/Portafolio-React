@@ -116,6 +116,7 @@ export const About = () => {
         <div className="about-box">
           <div className="f2">
             <h3 id="experiencia">01. Experiencia en el sector IT</h3>
+            <div className="ijo">
             <ul>
             <li>
                 <p>
@@ -210,13 +211,14 @@ export const About = () => {
                 </p>
               </li>
             </ul>
-
+            </div>
             <hr className="separador-about" />
           </div>
         </div>
         <div className="about-box">
           <div className="f2">
             <h3 id="formacion">02. Formación</h3>
+            <div className="ijo">
             <ul>
               <li>
                 <p>
@@ -253,13 +255,12 @@ export const About = () => {
                 </p>
               </li>
             </ul>
-
-            <p>
-              La tecnología forma parte de mi vida no sólo en el ámbito laboral,
-              sino que también la aplico para tener una continua formación y
-              actualización para proyectos personales o por petición externa.
-            </p>
-
+              <p>
+                La tecnología forma parte de mi vida no sólo en el ámbito laboral,
+                sino que también la aplico para tener una continua formación y
+                actualización para proyectos personales o por petición externa.
+              </p>
+            </div>
             <hr className="separador-about" />
           </div>
         </div>
