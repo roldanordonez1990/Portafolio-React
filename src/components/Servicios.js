@@ -114,6 +114,22 @@ export const Servicios = () => {
             <p className="texto-servicios2">
             - Posicionamiento SEO.
             </p>
+            <h3 id="auto">Automatización de Pruebas</h3> 
+            <p className="texto-servicios2">
+            - Control de calidad del software de forma automática y monitorizado.
+            </p>
+            <p className="texto-servicios2">
+            - Testeo automático de aplicaciones web y móviles.
+            </p>
+            <p className="texto-servicios2">
+            - Testeo automático de API Rest
+            </p>
+            <p className="texto-servicios2">
+            - Diseño y creación de planes y casos de prueba automatizables.
+            </p>
+            <p className="texto-servicios2">
+            - Optimización de recursos y tiempo de ejecución.
+            </p>
             <h3 id="qa">Quality Assurance</h3> 
             <p className="texto-servicios2">
             - Control de calidad del software.
@@ -129,22 +145,6 @@ export const Servicios = () => {
             </p>
             <p className="texto-servicios2">
             - Gestión de incidencias.
-            </p>
-            <h3 id="auto">Automatización de Pruebas</h3> 
-            <p className="texto-servicios2">
-            - Control de calidad del software de forma automática.
-            </p>
-            <p className="texto-servicios2">
-            - Testeo automático de aplicaciones web y móviles.
-            </p>
-            <p className="texto-servicios2">
-            - Testeo automático de API Rest
-            </p>
-            <p className="texto-servicios2">
-            - Diseño y creación de planes y casos de prueba automatizables.
-            </p>
-            <p className="texto-servicios2">
-            - Optimización del tiempo de ejecución.
             </p>
             <p className="texto-servicios3">
             <strong>¿Quieres saber más sobre alguna de ellas o tienes interés en aplicarlas?</strong>

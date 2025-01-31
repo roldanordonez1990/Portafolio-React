@@ -24,6 +24,16 @@ export const About = () => {
         });
         document.getElementById("nttdata").style.color = "#ab8616";
         break;
+
+        case "lleego":
+        const section3 = document.getElementById("lleego");
+        window.scrollTo({
+          top: section3.offsetTop,
+          behavior: "smooth",
+        });
+        document.getElementById("lleego").style.color = "#ab8616";
+        break;
+  
       default:
     }
   }, [id]);
@@ -107,6 +117,37 @@ export const About = () => {
           <div className="f2">
             <h3 id="experiencia">01. Experiencia en el sector IT</h3>
             <ul>
+            <li>
+                <p>
+                  <strong>
+                    <Link
+                      id="lleego"
+                      className="icon2 titulacion"
+                      to="https://lleego.com/"
+                      target="_blank"
+                    >
+                      2025-Actualidad. Lleego:
+                    </Link>
+                  </strong>
+                  <br />
+                  <span className="titulacion">
+                    QA Automation Engineer
+                  </span>{" "}
+                  en proyecto del sector turístico&nbsp;
+                  <strong>
+                    <Link
+                      className="icon2 titulacion"
+                      to="https://lleego.com/"
+                      target="_blank"
+                    >
+                      Lleego Travel Market 
+                    </Link>
+                  </strong>
+                  &nbsp;enfocado en garantizar la calidad del software mediante pruebas automatizadas. 
+                  API testing con <span className="titulacion">Postman</span> y front-end con 
+                  <span className="titulacion"> Cypress</span>. 
+                </p>
+              </li>
               <li>
                 <p>
                   <strong>
@@ -116,14 +157,14 @@ export const About = () => {
                       to="https://www.nttdata.com/global/en/"
                       target="_blank"
                     >
-                      2022-Actualidad. NTT DATA:
+                      2022-2025. NTT DATA:
                     </Link>
                   </strong>
                   <br />
                   <span className="titulacion">
-                    QA Automation y Tester funcional
+                    QA Automation Engineer
                   </span>{" "}
-                  para el proyecto de banca digital&nbsp;
+                  para el proyecto&nbsp; 
                   <strong>
                     <Link
                       className="icon2 titulacion"
@@ -133,20 +174,8 @@ export const About = () => {
                       CaixabankNow.
                     </Link>
                   </strong>
-                  &nbsp;Garantizar una mayor calidad del software tanto en la
-                  versión web como en la aplicación móvil, combinando pruebas
-                  funcionales integradas, así como en la automatización de las
-                  mismas por medio de herramientas como{" "}
-                  <span className="titulacion">
-                    Selenium WebDriver y Appium
-                  </span>{" "}
-                  en <span className="titulacion">Java</span>. La metodología
-                  del trabajo diario es{" "}
-                  <span className="titulacion"> Kanban</span>, combinando
-                  herramientas como <span className="titulacion">Rally</span> y{" "}
-                  <span className="titulacion">Jira</span> para su organización,
-                  con el principal objetivo de maximizar la calidad en las
-                  entregas de las tareas al cliente.
+                  &nbsp;Garantizar la calidad del software en la aplicación web y móvil combinando pruebas funcionales y automatizadas con <span className="titulacion">
+                   Selenium WebDriver y Appium</span> en <span className="titulacion">Java</span>. 
                 </p>
               </li>
               <li>
@@ -163,9 +192,9 @@ export const About = () => {
                   </strong>
                   <br />
                   <span className="titulacion">
-                    Desarrollador Web Full Stack
+                    Desarrollador Web Full-Stack
                   </span>{" "}
-                  en el proyecto de comercio electrónico&nbsp;
+                  para el proyecto e-commerce&nbsp;
                   <strong>
                     <Link
                       className="icon2 titulacion"
@@ -176,8 +205,8 @@ export const About = () => {
                     </Link>
                   </strong>
                   &nbsp;Desarrollo y mantenimiento de su página web, base de
-                  datos y CRM de software libre con{" "}
-                  <span className="titulacion">PHP</span>.
+                  datos y CRM con
+                  <span className="titulacion"> PHP, JavaScript, SQL, HTML y CSS</span>.
                 </p>
               </li>
             </ul>
@@ -259,6 +288,11 @@ export const About = () => {
                 </div>
               </div>
               <div className="exp-box">
+                <div className="item-mask2">
+                  <img src="/images/postman.png" alt="node" />
+                </div>
+              </div>
+              <div className="exp-box">
                 <div className="item-mask2 java-mask">
                   <img src="/images/java.png" alt="java" />
                 </div>
@@ -276,11 +310,6 @@ export const About = () => {
               <div className="exp-box">
                 <div className="item-mask2">
                   <img src="/images/appium.png" alt="appium" />
-                </div>
-              </div>
-              <div className="exp-box">
-                <div className="item-mask2">
-                  <img src="/images/karate1.png" alt="karate" />
                 </div>
               </div>
               <div className="exp-box">

@@ -131,7 +131,7 @@ h2 .name {
 
 .boxs {
   flex: 1;
-  text-align: center;
+  text-align: center;  
 }
 
 .boxs h2 {
@@ -301,7 +301,13 @@ h2 .name {
   animation-duration: 2ms;
 }
 
-.item-mask2 {
+.item-mask2,
+.item-mask1,
+.card,
+.titulo-boxs1,
+.titulo-boxs2,
+.titulo-proyects,
+.f2 {
   animation-timeline: view();
   animation-name: growing;
   animation-fill-mode: both;
@@ -353,8 +359,8 @@ h2 .name {
 }
 
 .box2 img {
-  width: 480px;
-  margin-left: 70px;
+  width: 460px;
+  margin-left: 50px;
 }
 
 .arrow {
