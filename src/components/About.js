@@ -25,7 +25,7 @@ export const About = () => {
         document.getElementById("nttdata").style.color = "#ab8616";
         break;
 
-        case "lleego":
+      case "lleego":
         const section3 = document.getElementById("lleego");
         window.scrollTo({
           top: section3.offsetTop,
@@ -33,7 +33,7 @@ export const About = () => {
         });
         document.getElementById("lleego").style.color = "#ab8616";
         break;
-  
+
       default:
     }
   }, [id]);
@@ -47,6 +47,7 @@ export const About = () => {
     });
   };
 
+  /*
   const handleClickExperiencia = (e) => {
     const section = document.querySelector("#experiencia");
     window.scrollTo({
@@ -82,10 +83,12 @@ export const About = () => {
     document.getElementById("experiencia").style.color = "";
     document.getElementById("skills").style.color = "#ab8616";
   };
+  */
 
   return (
     <>
       <section id="inicio-about" className="container-about">
+        {/*
         <ul className="servicio-list2">
           <li className="texto-servicio-list2">
             <Link to="#experiencia" onClick={(e) => handleClickExperiencia(e)}>
@@ -105,160 +108,187 @@ export const About = () => {
             </Link>
           </li>
         </ul>
-        <p className="p-cv">
-          <h4 id="cv">
-            <a className="cv" href="../docs/CV_Francisco_Roldan.pdf" download>
-              Descargar CV
-            </a>
-          </h4>
-        </p>
-        <hr className="separador-about2" />
+        */}
         <div className="about-box">
           <div className="f2">
-            <h3 id="experiencia">01. Experiencia en el sector IT</h3>
+            <h3 id="">01. Descargar CV</h3>
             <div className="ijo">
-            <ul>
-            <li>
-                <p>
-                  <strong>
-                    <Link
-                      id="lleego"
-                      className="icon2 titulacion"
-                      to="https://lleego.com/"
-                      target="_blank"
-                    >
-                      2025-Actualidad. Lleego:
-                    </Link>
-                  </strong>
-                  <br />
-                  <span className="titulacion">
-                    QA Automation Engineer
-                  </span>{" "}
-                  en proyecto del sector turístico&nbsp;
-                  <strong>
-                    <Link
-                      className="icon2 titulacion"
-                      to="https://lleego.com/"
-                      target="_blank"
-                    >
-                      Lleego Travel Market 
-                    </Link>
-                  </strong>
-                  &nbsp;enfocado en garantizar la calidad del software mediante pruebas automatizadas. 
-                  API testing con <span className="titulacion">Postman</span> y front-end con 
-                  <span className="titulacion"> Cypress</span>. 
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>
-                    <Link
-                      id="nttdata"
-                      className="icon2 titulacion"
-                      to="https://www.nttdata.com/global/en/"
-                      target="_blank"
-                    >
-                      2022-2025. NTT DATA:
-                    </Link>
-                  </strong>
-                  <br />
-                  <span className="titulacion">
-                    QA Automation Engineer
-                  </span>{" "}
-                  para el proyecto&nbsp; 
-                  <strong>
-                    <Link
-                      className="icon2 titulacion"
-                      to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html"
-                      target="_blank"
-                    >
-                      CaixabankNow.
-                    </Link>
-                  </strong>
-                  &nbsp;Garantizar la calidad del software en la aplicación web y móvil combinando pruebas funcionales y automatizadas con <span className="titulacion">
-                   Selenium WebDriver y Appium</span> en <span className="titulacion">Java</span>. 
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>
-                    <Link
-                      id="hostgreen"
-                      className="icon2 titulacion"
-                      to="https://www.hostgreen.es/"
-                      target="_blank"
-                    >
-                      2021-2022. Hostgreen:
-                    </Link>
-                  </strong>
-                  <br />
-                  <span className="titulacion">
-                    Desarrollador Web Full-Stack
-                  </span>{" "}
-                  para el proyecto e-commerce&nbsp;
-                  <strong>
-                    <Link
-                      className="icon2 titulacion"
-                      to="https://www.adivin.com/"
-                      target="_blank"
-                    >
-                      Adivin.
-                    </Link>
-                  </strong>
-                  &nbsp;Desarrollo y mantenimiento de su página web, base de
-                  datos y CRM con
-                  <span className="titulacion"> PHP, JavaScript, SQL, HTML y CSS</span>.
-                </p>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <p className="p-cv">
+                    <h4 id="cv">
+                      <a
+                        className="cv"
+                        href="../docs/CV_Francisco_Roldan.pdf"
+                        download
+                      >
+                        Francisco Roldán CV pdf
+                      </a>
+                    </h4>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <hr className="separador-about3" />
+          </div>
+        </div>
+        <div className="about-box">
+          <div className="f2">
+            <h3 id="experiencia">02. Experiencia en el sector IT</h3>
+            <div className="ijo">
+              <ul>
+                <li>
+                  <p>
+                    <strong>
+                      <Link
+                        id="lleego"
+                        className="icon2 titulacion"
+                        to="https://lleego.com/"
+                        target="_blank"
+                      >
+                        2025-Actualidad. Lleego:
+                      </Link>
+                    </strong>
+                    <br />
+                    <span className="titulacion">
+                      QA Automation Engineer
+                    </span>{" "}
+                    en proyecto del sector turístico&nbsp;
+                    <strong>
+                      <Link
+                        className="icon2 titulacion"
+                        to="https://lleego.com/"
+                        target="_blank"
+                      >
+                        Lleego Travel Market
+                      </Link>
+                    </strong>
+                    &nbsp;enfocado en garantizar la calidad del software
+                    mediante pruebas automatizadas. API testing con{" "}
+                    <span className="titulacion">Postman</span> y front-end con
+                    <span className="titulacion"> Cypress</span>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>
+                      <Link
+                        id="nttdata"
+                        className="icon2 titulacion"
+                        to="https://www.nttdata.com/global/en/"
+                        target="_blank"
+                      >
+                        2022-2025. NTT DATA:
+                      </Link>
+                    </strong>
+                    <br />
+                    <span className="titulacion">
+                      QA Automation Engineer
+                    </span>{" "}
+                    para el proyecto&nbsp;
+                    <strong>
+                      <Link
+                        className="icon2 titulacion"
+                        to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html"
+                        target="_blank"
+                      >
+                        CaixabankNow.
+                      </Link>
+                    </strong>
+                    &nbsp;Garantizar la calidad del software en la aplicación
+                    web y móvil combinando pruebas funcionales y automatizadas
+                    con{" "}
+                    <span className="titulacion">
+                      Selenium WebDriver y Appium
+                    </span>{" "}
+                    en <span className="titulacion">Java</span>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>
+                      <Link
+                        id="hostgreen"
+                        className="icon2 titulacion"
+                        to="https://www.hostgreen.es/"
+                        target="_blank"
+                      >
+                        2021-2022. Hostgreen:
+                      </Link>
+                    </strong>
+                    <br />
+                    <span className="titulacion">
+                      Desarrollador Web Full-Stack
+                    </span>{" "}
+                    para el proyecto e-commerce&nbsp;
+                    <strong>
+                      <Link
+                        className="icon2 titulacion"
+                        to="https://www.adivin.com/"
+                        target="_blank"
+                      >
+                        Adivin.
+                      </Link>
+                    </strong>
+                    &nbsp;Desarrollo y mantenimiento de su página web, base de
+                    datos y CRM con
+                    <span className="titulacion">
+                      {" "}
+                      PHP, JavaScript, SQL, HTML y CSS
+                    </span>
+                    .
+                  </p>
+                </li>
+              </ul>
             </div>
             <hr className="separador-about" />
           </div>
         </div>
         <div className="about-box">
           <div className="f2">
-            <h3 id="formacion">02. Formación</h3>
+            <h3 id="formacion">03. Formación</h3>
             <div className="ijo">
-            <ul>
-              <li>
-                <p>
-                  <strong>
+              <ul>
+                <li>
+                  <p>
+                    <strong>
+                      <span className="titulacion">
+                        2019-2021. CFGS en Desarrollo de Aplicaciones Web (DAW)
+                      </span>{" "}
+                    </strong>{" "}
+                    por el{" "}
                     <span className="titulacion">
-                      2019-2021. CFGS en Desarrollo de Aplicaciones Web (DAW)
-                    </span>{" "}
-                  </strong>{" "}
-                  por el{" "}
-                  <span className="titulacion">
-                    IES Marqués de Comares (Lucena, Córdoba).
-                  </span>
-                  &nbsp;
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>
-                    <span className="titulacion">
-                      2014-2015. Máster en Desarrollo Territorial Sostenible
-                    </span>{" "}
-                  </strong>{" "}
-                  por la <span className="titulacion">UAM.</span>&nbsp;
-                </p>
-              </li>
-              <li>
-                <p>
-                  <strong>
-                    <span className="titulacion">
-                      2008-2013. Licenciado en Geografía{" "}
-                    </span>{" "}
-                  </strong>{" "}
-                  por la <span className="titulacion">UMA.</span>&nbsp;
-                </p>
-              </li>
-            </ul>
+                      IES Marqués de Comares (Lucena, Córdoba).
+                    </span>
+                    &nbsp;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>
+                      <span className="titulacion">
+                        2014-2015. Máster en Desarrollo Territorial Sostenible
+                      </span>{" "}
+                    </strong>{" "}
+                    por la <span className="titulacion">UAM.</span>&nbsp;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>
+                      <span className="titulacion">
+                        2008-2013. Licenciado en Geografía{" "}
+                      </span>{" "}
+                    </strong>{" "}
+                    por la <span className="titulacion">UMA.</span>&nbsp;
+                  </p>
+                </li>
+              </ul>
               <p>
-                La tecnología forma parte de mi vida no sólo en el ámbito laboral,
-                sino que también la aplico para tener una continua formación y
-                actualización para proyectos personales o por petición externa.
+                La tecnología forma parte de mi vida no sólo en el ámbito
+                laboral, sino que también la aplico para tener una continua
+                formación y actualización para proyectos personales o por
+                petición externa.
               </p>
             </div>
             <hr className="separador-about" />
@@ -266,7 +296,7 @@ export const About = () => {
         </div>
         <div className="about-box2">
           <div className="f2">
-            <h3 id="skills">03. Habilidades/Conocimientos generales</h3>
+            <h3 id="skills">04. Habilidades/Conocimientos generales</h3>
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
@@ -334,7 +364,7 @@ export const About = () => {
         </div>
         <div className="about-box2">
           <div className="f2">
-            <h3 id="skills">04. Habilidades/Frameworks y Librerías</h3>
+            <h3 id="skills">05. Habilidades/Frameworks y Librerías</h3>
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
