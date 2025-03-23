@@ -129,6 +129,12 @@ h2 .name {
   flex-wrap: wrap;
 }
 
+/*se oculta el input de la vista del dom*/
+.honey{
+  position: absolute;
+  left: -9999px;
+}
+
 .boxs {
   flex: 1;
   text-align: center;  

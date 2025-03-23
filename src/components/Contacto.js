@@ -76,6 +76,15 @@ export const Contacto = () => {
   }
 
   const enviarEmail = (e) => {
+    //Trampa para los bots
+    const honeypot = document.querySelector("[name='_gotcha']").value;
+    if (honeypot !== "" || /\S/.test(honeypot)) {
+      e.preventDefault(); // Cancela el envío si el honeypot está lleno
+      alert("¡Bot detectado! ¡Largo de aquí!");
+      window.location.reload();
+      return;
+    }
+
     var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,5})+$/;
     var emailInput = document.getElementById("email");
 
@@ -192,6 +201,7 @@ export const Contacto = () => {
             <input onChange={(e) => changeNombre(e)} type="text" className={habilitado1 ? "nombre2 entry" : "nombre entry" } placeholder="Nombre completo" name="nombre"/>
             <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
             <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/> 
+            <input type="text" className="honey" name="_gotcha" autocomplete="off" tabindex="-1" placeholder="¿Quién eres?"/>
             {habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? (
               <span><input type="submit" className="submit-999" value="Enviar"/></span>
             )
