@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import emailjs from "emailjs-com";
+//import emailjs from "emailjs-com";
 import { VentanaModal } from "./VentanaModal";
 import { Link } from "react-router-dom";
 //import ReCAPTCHA from 'react-google-recaptcha';
@@ -12,10 +12,10 @@ export const Contacto = () => {
   const [habilitado2, setHabilitado2] = useState(false);
   const [habilitado3, setHabilitado3] = useState(false);
   const [respuestaOk, setRespuestaOk] = useState(false);
-  const [loading, setLoading] = useState(false);
+  //const [loading, setLoading] = useState(false);
   const [emailError, setEmailError] = useState(false);
-  const [errorSend, setErrorSend] = useState(false);
-  const [captchaValue, setCaptchaValue] = useState(null);
+  //const [errorSend, setErrorSend] = useState(false);
+  //const [captchaValue, setCaptchaValue] = useState(null);
   //const [isMobile, setIsMobile] = useState(window.innerWidth <= 525);
 
   //useEffect sólo para el recaptcha
@@ -34,8 +34,7 @@ export const Contacto = () => {
   const changeNombre = (e)=>{
     let dato = e.target.value;
     if(dato !== ""){
-      //He forzado a false para capar el botón de enviar por los bots...
-      setHabilitado1(false);
+      setHabilitado1(true);
     }else{
       setHabilitado1(false);
     }
@@ -76,7 +75,7 @@ export const Contacto = () => {
       setHabilitado3(false);
     }
   }
-  
+  /*
   const enviarEmail = (e) => {
     //Trampa para los bots
     const honeypot = document.querySelector("[name='_gotcha']").value;
@@ -125,7 +124,7 @@ export const Contacto = () => {
       e.preventDefault();
     }
   }
-    
+  */
     //si no cerramos el modal, tenemos 10" para que se cierre solo
     if(respuestaOk){
       setTimeout(() => {
@@ -164,7 +163,9 @@ export const Contacto = () => {
           </Link>
           </div>
 
-          {loading ? (
+          {
+          /*
+          loading ? (
             <div className="wrapper-loading">
             <div className="circle"></div>
             <div className="circle"></div>
@@ -175,6 +176,7 @@ export const Contacto = () => {
             </div>
             )
             : ""
+          */
           }
           {respuestaOk ? (
           <VentanaModal 
@@ -201,10 +203,13 @@ export const Contacto = () => {
             )
             : ""
             }
-            {errorSend ? (
+            {
+            /*
+            errorSend ? (
               <span className="errorSend">Error al enviar el mensaje. Inténtelo de nuevo o más tarde. Disculpe las molestias.</span>
             )
             : ""
+            */
             }
             <input onChange={(e) => changeNombre(e)} type="text" className={habilitado1 ? "nombre2 entry" : "nombre entry" } placeholder="Nombre completo" name="nombre"/>
             <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
