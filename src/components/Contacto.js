@@ -1,9 +1,9 @@
-import React, { useState, useEffect  } from "react";
+import React, { useState} from "react";
 import emailjs from "emailjs-com";
 import { VentanaModal } from "./VentanaModal";
 import { Link } from "react-router-dom";
-import ReCAPTCHA from 'react-google-recaptcha';
-import { Constantes } from "../helpers/Constantes";
+//import ReCAPTCHA from 'react-google-recaptcha';
+//import { Constantes } from "../helpers/Constantes";
 /*Para instalar emiljs, añadir el comando: npm i emailjs-com*/
 
 export const Contacto = () => {
@@ -16,9 +16,10 @@ export const Contacto = () => {
   const [emailError, setEmailError] = useState(false);
   const [errorSend, setErrorSend] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 525);
+  //const [isMobile, setIsMobile] = useState(window.innerWidth <= 525);
 
   //useEffect sólo para el recaptcha
+  /*
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 525);
@@ -29,11 +30,12 @@ export const Contacto = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+  */
   const changeNombre = (e)=>{
     let dato = e.target.value;
     if(dato !== ""){
-      setHabilitado1(true);
+      //He forzado a false para capar el botón de enviar por los bots...
+      setHabilitado1(false);
     }else{
       setHabilitado1(false);
     }
@@ -74,7 +76,7 @@ export const Contacto = () => {
       setHabilitado3(false);
     }
   }
-
+  
   const enviarEmail = (e) => {
     //Trampa para los bots
     const honeypot = document.querySelector("[name='_gotcha']").value;
@@ -140,7 +142,7 @@ export const Contacto = () => {
   return (
   <>
   <section className="contenido-contacto">
-        {/*V1 TEXTO, LOADERS Y VENTANA*/}
+      {/*V1 TEXTO, LOADERS Y VENTANA*/}
       <div className="v">
         <div className="v1">
           <p className="titulo-contacto"><strong>¡Gracias por contactar conmigo!</strong></p> 
@@ -187,7 +189,13 @@ export const Contacto = () => {
         {/*V2 FORMULARIO*/}
       <div className="v">
         <div className="v2">
-          <form id="formulario" className="form" onSubmit={enviarEmail}>
+          {
+            /*
+            Sacado del formulario por ahora...
+            onSubmit={enviarEmail}
+            */
+          }
+          <form id="formulario" className="form">
             {emailError ? (
               <span className="errorEmail">Introduce un email válido</span>
             )
@@ -202,16 +210,25 @@ export const Contacto = () => {
             <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
             <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/> 
             <input type="text" className="honey" name="_gotcha" autocomplete="off" tabindex="-1" placeholder="¿Quién eres?"/>
-            {habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? (
+            
+            {
+            /*
+            habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? (
               <span><input type="submit" className="submit-999" value="Enviar"/></span>
             )
               : ""
+            */
             }
-            <div className="recaptcha">
+            {
+              /*
+              <div className="recaptcha">
             <ReCAPTCHA
             sitekey={Constantes.key_recaptcha_pro} size={isMobile ? "compact" : ""}
             onChange={(action) => setCaptchaValue(action)}/>
             </div>
+              */
+            }
+            <span className="errorEmail"><strong>En mantenimiento, disculpe las molestias</strong></span>
           </form>
         </div>
       </div>
