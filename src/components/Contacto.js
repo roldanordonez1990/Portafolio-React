@@ -34,7 +34,7 @@ export const Contacto = () => {
   const changeNombre = (e)=>{
     let dato = e.target.value;
     if(dato !== ""){
-      setHabilitado1(true);
+      setHabilitado1(false); //Se fuerza a false para no habilitar el botón. Aquí iría true
     }else{
       setHabilitado1(false);
     }
@@ -45,7 +45,7 @@ export const Contacto = () => {
     let dato = e.target.value;
 
     if(dato !== ""){
-      setHabilitado2(true);
+      setHabilitado2(false); //Se fuerza a false para no habilitar el botón. Aquí iría true
     }else{
       document.getElementById("email").style.border = "";
       setHabilitado2(false);
@@ -152,7 +152,7 @@ export const Contacto = () => {
             En cambio, si prefieres no usar este formulario, puedes enviarme un mensaje a:
           </p>
           <p className="p-correo">
-            <a className="correo-personal" href="mailto:roldanordonez.francisco@gmail.com">roldanordonez.francisco@gmail.com </a>
+            <span className="correo-personal">roldanordonez.francisco@gmail.com</span>
               <div className="correo-personal1">
                 <span className="material-symbols-outlined">mail</span>
               </div>
