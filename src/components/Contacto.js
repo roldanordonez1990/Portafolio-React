@@ -1,142 +1,8 @@
-import React, { useState} from "react";
+import React from "react";
 //import emailjs from "emailjs-com";
-import { VentanaModal } from "./VentanaModal";
 import { Link } from "react-router-dom";
-//import ReCAPTCHA from 'react-google-recaptcha';
-//import { Constantes } from "../helpers/Constantes";
-/*Para instalar emiljs, añadir el comando: npm i emailjs-com*/
 
 export const Contacto = () => {
-
-  const [habilitado1, setHabilitado1] = useState(false);
-  const [habilitado2, setHabilitado2] = useState(false);
-  const [habilitado3, setHabilitado3] = useState(false);
-  const [respuestaOk, setRespuestaOk] = useState(false);
-  //const [loading, setLoading] = useState(false);
-  const [emailError, setEmailError] = useState(false);
-  //const [errorSend, setErrorSend] = useState(false);
-  //const [captchaValue, setCaptchaValue] = useState(null);
-  //const [isMobile, setIsMobile] = useState(window.innerWidth <= 525);
-
-  //useEffect sólo para el recaptcha
-  /*
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 525);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  */
-  const changeNombre = (e)=>{
-    let dato = e.target.value;
-    if(dato !== ""){
-      setHabilitado1(false); //Se fuerza a false para no habilitar el botón. Aquí iría true
-    }else{
-      setHabilitado1(false);
-    }
-  }
-
-  const changeEmail = (e)=>{
-    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,5})+$/;
-    let dato = e.target.value;
-
-    if(dato !== ""){
-      setHabilitado2(false); //Se fuerza a false para no habilitar el botón. Aquí iría true
-    }else{
-      document.getElementById("email").style.border = "";
-      setHabilitado2(false);
-    }
-
-    //Lógica para validar el email y habilitar el botón de enviar
-    if(validEmail.test(dato)){
-      //El input tiene contenido y la validación es correcta. Se habilita el botón de enviar.
-      document.getElementById("email").style.border = "2px solid green";
-      setEmailError(false);
-    }else if(dato === ""){
-      //El input está vacío. NO se habilita el botón de enviar.
-      setEmailError(false);
-      document.getElementById("email").style.border = "";
-    }else if(!validEmail.test(dato)){
-      //El input tiene contenido y la validación NO es correcta. NO se habilita el botón de enviar.
-      setEmailError(true);
-      document.getElementById("email").style.border = "2px solid red";
-    }
-  }
-
-  const changeMensaje = (e)=>{
-    let dato = e.target.value;
-    if(dato !== ""){
-      setHabilitado3(true);
-    }else{
-      setHabilitado3(false);
-    }
-  }
-  /*
-  const enviarEmail = (e) => {
-    //Trampa para los bots
-    const honeypot = document.querySelector("[name='_gotcha']").value;
-    if (honeypot !== "" || /\S/.test(honeypot)) {
-      e.preventDefault(); // Cancela el envío si el honeypot está lleno
-      alert("¡Bot detectado! ¡Largo de aquí!");
-      window.location.reload();
-      return;
-    }
-
-    var validEmail =  /^[a-z0-9-_.]+@[a-z0-9-_.]+(\.[a-z]{2,5})+$/;
-    var emailInput = document.getElementById("email");
-
-    if(validEmail.test(emailInput.value) && habilitado1 && habilitado2 && habilitado3 && captchaValue){
-      
-      setLoading(true);
-      e.preventDefault();
-      emailjs.sendForm("service_iqfypcl","template_eal2v49",e.target,"IYjDekAWB3TKy5jQG").then((res) => {
-        console.log("RESPUESTA:" + res);
-        if(res.status === 200){
-          console.log("RESPUESTA:" + res.status);
-          setRespuestaOk(true);
-          setLoading(false);
-          document.getElementById("formulario").reset();
-          setHabilitado1(false);
-          setHabilitado2(false);
-          setHabilitado3(false);
-          setCaptchaValue(null)
-          document.getElementById("email").style.border = "";
-
-        }else{
-          console.log("RESPUESTA:" + res.status);
-          setErrorSend(true);
-          setRespuestaOk(false);
-          setLoading(false);
-        }
-      }, function(error){
-        console.log("RESPUESTA:" + error.status);
-          setErrorSend(true);
-          setRespuestaOk(false);
-          setLoading(false);
-      });  
-
-    }else{
-      console.log("Tienes que rellenar el formulario correctamente.")
-      e.preventDefault();
-    }
-  }
-  */
-    //si no cerramos el modal, tenemos 10" para que se cierre solo
-    if(respuestaOk){
-      setTimeout(() => {
-          setRespuestaOk(false);
-          window.location.reload();
-      }, "15000");
-    }
-    //función para cerrar el modal poniendo la respuesta a false
-    const closeModal = () => {
-      setRespuestaOk(false)
-      window.location.reload();
-    }
 
   return (
   <>
@@ -162,79 +28,18 @@ export const Contacto = () => {
             LinkedIn <i className="fab fa-linkedin fa-lg mt-1 fa-2x"><span className="sr-only"></span></i>
           </Link>
           </div>
-
-          {
-          /*
-          loading ? (
-            <div className="wrapper-loading">
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="shadow"></div>
-            <div className="shadow"></div>
-            <div className="shadow"></div>
-            </div>
-            )
-            : ""
-          */
-          }
-          {respuestaOk ? (
-          <VentanaModal 
-            title="¡Mensaje enviado correctamente! Te responderé lo antes posible a la dirección que has indicado." 
-            handleClose={() => closeModal() }>
-          </VentanaModal>
-          )
-          : ""
-          }
         </div>
       </div>
-        {/*V2 FORMULARIO*/}
+
+      {/*V2 FORMULARIO*/}
       <div className="v">
         <div className="v2">
-          {
-            /*
-            Sacado del formulario por ahora...
-            onSubmit={enviarEmail}
-            */
-          }
-          <form id="formulario" className="form">
-            {emailError ? (
-              <span className="errorEmail">Introduce un email válido</span>
-            )
-            : ""
-            }
-            {
-            /*
-            errorSend ? (
-              <span className="errorSend">Error al enviar el mensaje. Inténtelo de nuevo o más tarde. Disculpe las molestias.</span>
-            )
-            : ""
-            */
-            }
-            <input onChange={(e) => changeNombre(e)} type="text" className={habilitado1 ? "nombre2 entry" : "nombre entry" } placeholder="Nombre completo" name="nombre"/>
-            <input id="email" onChange={(e) => changeEmail(e)} type="text" className={habilitado2 ? "email2 entry" : "email entry" } placeholder="Email" name="email"/>
-            <textarea onChange={(e) => changeMensaje(e)} className={habilitado3 ? "message2 entry" : "message entry" } placeholder="¿Por qué quieres contactar conmigo?" name="mensaje"/> 
-            <input type="text" className="honey" name="_gotcha" autocomplete="off" tabindex="-1" placeholder="¿Quién eres?"/>
-            
-            {
-            /*
-            habilitado1 && habilitado2 && habilitado3 && !emailError && captchaValue ? (
-              <span><input type="submit" className="submit-999" value="Enviar"/></span>
-            )
-              : ""
-            */
-            }
-            {
-              /*
-              <div className="recaptcha">
-            <ReCAPTCHA
-            sitekey={Constantes.key_recaptcha_pro} size={isMobile ? "compact" : ""}
-            onChange={(action) => setCaptchaValue(action)}/>
-            </div>
-              */
-            }
-            <span className="errorEmail"><strong>En mantenimiento, disculpe las molestias</strong></span>
-          </form>
+          <div className='box-error-img form'>
+              <img src="/images/mantenimiento.png" alt=''/>
+          </div>
+          <p className="p-correo">
+            <span className="p-correo errorEmail"><strong>En mantenimiento, disculpe las molestias</strong></span>
+          </p>
         </div>
       </div>
       <div className="magic"></div>
