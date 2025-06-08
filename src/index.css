@@ -1238,7 +1238,7 @@ textarea::placeholder {
   .header nav ul {
     max-height: 100%;
     /*De esta forma he conseguido por fin fijar el menú en el centro sin que se mueva*/
-    margin-right: 28px;
+    margin-right: 26px;
     margin-top: 0px;
     justify-content: center;
   }
