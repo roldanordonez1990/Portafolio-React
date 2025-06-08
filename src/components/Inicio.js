@@ -64,7 +64,7 @@ export const Inicio = () => {
             <div className="exp-box">
               <div className="item-mask1">
                 <Link to="/about/hostgreen">
-                <img src="/images/hostgreen1.png" alt="ntt" />
+                <img src="/images/hostgreen1.png" alt="hostgreen" />
                 </Link>
               </div>
                 <span className="titulo-exp"><strong>Desarrollador Web</strong></span>

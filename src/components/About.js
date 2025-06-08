@@ -300,62 +300,62 @@ export const About = () => {
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/html.png" alt="html" />
-                </div>
-              </div>
-              <div className="exp-box">
-                <div className="item-mask2 css-mask">
-                  <img src="/images/css.png" alt="css" />
+                  <img src="/images/html.png" alt="html" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/js.png" alt="js" />
+                  <img src="/images/css.png" alt="css" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/node1.png" alt="node" />
+                  <img src="/images/js.png" alt="js" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/postman.png" alt="node" />
-                </div>
-              </div>
-              <div className="exp-box">
-                <div className="item-mask2 java-mask">
-                  <img src="/images/java.png" alt="java" />
-                </div>
-              </div>
-              <div className="exp-box">
-                <div className="item-mask2 php-mask">
-                  <img src="/images/php1.png" alt="php" />
+                  <img src="/images/node1.png" alt="node" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/selenium1.png" alt="selenium" />
+                  <img src="/images/postman.png" alt="node" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/appium.png" alt="appium" />
+                  <img src="/images/java.png" alt="java" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/sql.png" alt="sql" />
+                  <img src="/images/php1.png" alt="php" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/mongodb1.png" alt="mongo" />
+                  <img src="/images/selenium1.png" alt="selenium" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/git.png" alt="git" />
+                  <img src="/images/appium.png" alt="appium" className="midu"/>
+                </div>
+              </div>
+              <div className="exp-box">
+                <div className="item-mask2">
+                  <img src="/images/sql.png" alt="sql" className="midu"/>
+                </div>
+              </div>
+              <div className="exp-box">
+                <div className="item-mask2">
+                  <img src="/images/mongodb1.png" alt="mongo" className="midu"/>
+                </div>
+              </div>
+              <div className="exp-box">
+                <div className="item-mask2">
+                  <img src="/images/git.png" alt="git" className="midu"/>
                 </div>
               </div>
             </section>
@@ -368,22 +368,22 @@ export const About = () => {
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/react1.png" alt="react" />
+                  <img src="/images/react1.png" alt="react" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/angular1.png" alt="angular" />
+                  <img src="/images/angular1.png" alt="angular" className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/spring.png" alt="spring " />
+                  <img src="/images/spring.png" alt="spring " className="midu"/>
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/laravel1.png" alt="spring " />
+                  <img src="/images/laravel1.png" alt="spring " className="midu"/>
                 </div>
               </div>
             </section>
