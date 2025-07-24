@@ -10,6 +10,114 @@ body {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
+/* From Uiverse.io by Codecite */ 
+.cvAnimation{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.anchorAnimation {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #ed553b;
+  padding: 14px 40px 13px;
+  overflow: hidden;
+  position: relative;
+}
+
+.anchorAnimation:hover {
+  color: #4e484a;
+}
+
+.cvAnimation a::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  background-color: #ed553b;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 111%;
+  transition: all .3s ease;
+}
+
+.cvAnimation a:hover::before {
+  height: 11%;
+}
+
+.cvAnimation span {
+  position: relative;
+  z-index: 2;
+  transition: all .3s ease;
+}
+
+/* From Uiverse.io by kennyotsu */ 
+.notifications-container {
+  width: fit-content; /* Se adapta al contenido */
+  max-width: 100%;     /* No desborda en pantallas pequeñas */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: #f5f5f5;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading,
+.success-prompt-heading2 {
+  font-weight: bold;
+  color: #ab8616;
+} 
+
+.success-prompt-heading2 {
+  color: gray;
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+}
+
+.success-prompt-prompt2{
+  font-weight: normal;
+  color: black;
+}
+
+.success-button-container {
+  display: flex;
+  margin-top: 0.875rem;
+  margin-bottom: -0.375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.success-button-main {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  border: none
+}
+
 .layout {
   /*Es el contenedor principal donde le damos la anchura y márgenes automáticos a ambos lados*/
   width: 85%;
@@ -331,8 +439,8 @@ h2 .name {
 .card,
 .titulo-boxs1,
 .titulo-boxs2,
+.notifications-container,
 .titulo-proyects,
-.ijo,
 .texto-servicios2{
   animation-timeline: view();
   animation-name: growing;
@@ -526,6 +634,10 @@ h2 .name {
   margin-top: 39px;
 }
 
+#formacion {
+  margin-top: 60px;
+}
+
 .exp-box {
   flex-grow: 1 1;
   text-align: center;
@@ -562,6 +674,7 @@ h2 .name {
 }
 
 #skills {
+  margin-top: 60px;
   margin-bottom: -25px;
 }
 
@@ -1274,9 +1387,7 @@ textarea::placeholder {
     flex-direction: column;
   }
 
-  .container-about{
-    margin-top: 15px;
-  }
+
 
   .material-symbols-outlined,
   .material-symbols-rounded{

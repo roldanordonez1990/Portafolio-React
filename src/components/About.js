@@ -111,279 +111,314 @@ export const About = () => {
         */}
         <div className="about-box">
           <div className="f2">
-            <h3 id="">01. Descargar CV</h3>
-            <div className="ijo">
-              <ul>
-                <li>
-                  <p className="p-cv">
-                    <h4 id="cv">
-                      <a
-                        className="cv"
-                        href="../docs/CV_Francisco_Roldan.pdf"
-                        download
-                      >
-                        Francisco Roldán CV pdf
-                      </a>
-                    </h4>
-                  </p>
-                </li>
-              </ul>
+            <div className="cvAnimation">
+              <a
+                href="../docs/CV_Francisco_Roldan.pdf"
+                className="anchorAnimation"
+                download
+              >
+                <span>¡Aquí puedes descargar mi CV!</span>
+              </a>
             </div>
-            <hr className="separador-about3" />
           </div>
         </div>
         <div className="about-box">
           <div className="f2">
-            <h3 id="experiencia">02. Experiencia en el sector IT</h3>
-            <div className="ijo">
-              <ul>
-                <li>
-                  <p>
-                    <strong>
-                      <Link
-                        id="lleego"
-                        className="icon2 titulacion"
-                        to="https://lleego.com/"
-                        target="_blank"
-                      >
-                        2025-Actualidad. Lleego:
-                      </Link>
-                    </strong>
-                    <br />
-                    <span className="titulacion">
-                      QA Automation Engineer
-                    </span>{" "}
-                    en proyecto del sector turístico&nbsp;
-                    <strong>
-                      <Link
-                        className="icon2 titulacion"
-                        to="https://lleego.com/"
-                        target="_blank"
-                      >
-                        Lleego Travel Market
-                      </Link>
-                    </strong>
-                    &nbsp;enfocado en garantizar la calidad del software
-                    mediante pruebas automatizadas. API testing con{" "}
-                    <span className="titulacion">Postman</span> y front-end con
-                    <span className="titulacion"> Cypress</span>.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>
-                      <Link
-                        id="nttdata"
-                        className="icon2 titulacion"
-                        to="https://www.nttdata.com/global/en/"
-                        target="_blank"
-                      >
-                        2022-2025. NTT DATA:
-                      </Link>
-                    </strong>
-                    <br />
-                    <span className="titulacion">
-                      QA Automation Engineer
-                    </span>{" "}
-                    para el proyecto&nbsp;
-                    <strong>
-                      <Link
-                        className="icon2 titulacion"
-                        to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html"
-                        target="_blank"
-                      >
-                        CaixabankNow.
-                      </Link>
-                    </strong>
-                    &nbsp;Garantizar la calidad del software en la aplicación
-                    web y móvil combinando pruebas funcionales y automatizadas
-                    con{" "}
-                    <span className="titulacion">
-                      Selenium WebDriver y Appium
-                    </span>{" "}
-                    en <span className="titulacion">Java</span>.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>
-                      <Link
-                        id="hostgreen"
-                        className="icon2 titulacion"
-                        to="https://www.hostgreen.es/"
-                        target="_blank"
-                      >
-                        2021-2022. Hostgreen:
-                      </Link>
-                    </strong>
-                    <br />
-                    <span className="titulacion">
-                      Desarrollador Web Full-Stack
-                    </span>{" "}
-                    para el proyecto e-commerce&nbsp;
-                    <strong>
-                      <Link
-                        className="icon2 titulacion"
-                        to="https://www.adivin.com/"
-                        target="_blank"
-                      >
-                        Adivin.
-                      </Link>
-                    </strong>
-                    &nbsp;Desarrollo y mantenimiento de su página web, base de
-                    datos y CRM con
-                    <span className="titulacion">
+            <h3 id="experiencia">01. Experiencia en el sector IT</h3>
+
+            <div className="notifications-container">
+              <div className="success">
+                <div className="flex">
+                  <div className="success-prompt-wrap">
+                    <p className="success-prompt-heading">
+                      &#x1F4BB; Lleego Travel Market
+                    </p>
+                    <div className="success-prompt-prompt">
+                      <p>
+                        <span className="titulacion">
+                          QA Automation Engineer
+                        </span>{" "}
+                        en proyecto del sector turístico&nbsp;
+                        <strong>
+                          <Link
+                            className="icon2 titulacion"
+                            to="https://lleego.com/"
+                            target="_blank"
+                          >
+                            Lleego Travel Market
+                          </Link>
+                        </strong>
+                        &nbsp;enfocado en garantizar la calidad del software
+                        mediante pruebas automatizadas. API testing con{" "}
+                        <span className="titulacion">Postman en</span>
+                        <span className="titulacion"> JavaScript</span>.
+                      </p>
+                    </div>
+                    <div className="success-button-container">
+                      <button className="success-button-main" type="button">
+                        2025-Actualidad &#128267;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div className="notifications-container">
+              <div className="success">
+                <div className="flex">
+                  <div className="success-prompt-wrap">
+                    <p className="success-prompt-heading">&#x1F4BB; NTT DATA</p>
+                    <div className="success-prompt-prompt">
+                      <p>
+                        <span className="titulacion">
+                          QA Automation Engineer
+                        </span>{" "}
+                        para el proyecto&nbsp;
+                        <strong>
+                          <Link
+                            className="icon2 titulacion"
+                            to="https://www.caixabank.es/particular/bancadistancia/caixabanknow_es.html"
+                            target="_blank"
+                          >
+                            CaixabankNow.
+                          </Link>
+                        </strong>
+                        &nbsp;Garantizar la calidad del software en la
+                        aplicación web y móvil combinando pruebas funcionales y
+                        automatizadas con{" "}
+                        <span className="titulacion">
+                          Selenium WebDriver y Appium
+                        </span>{" "}
+                        en <span className="titulacion">Java</span>.
+                      </p>
+                    </div>
+                    <div className="success-button-container">
+                      <button className="success-button-main" type="button">
+                        2022-2025 &#x1FAAB;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div className="notifications-container">
+              <div className="success">
+                <div className="flex">
+                  <div className="success-prompt-wrap">
+                    <p className="success-prompt-heading">
+                      &#x1F4BB; Hostgreen
+                    </p>
+                    <div className="success-prompt-prompt">
+                      <p>
+                        <span className="titulacion">
+                          Desarrollador Web Full-Stack
+                        </span>{" "}
+                        para el proyecto e-commerce&nbsp;
+                        <strong>
+                          <Link
+                            className="icon2 titulacion"
+                            to="https://www.adivin.com/"
+                            target="_blank"
+                          >
+                            Adivin.
+                          </Link>
+                        </strong>
+                        &nbsp;Desarrollo y mantenimiento de su página web, base
+                        de datos y CRM con
+                        <span className="titulacion">
+                          {" "}
+                          PHP, JavaScript, SQL, HTML y CSS
+                        </span>
+                        .
+                      </p>
+                    </div>
+                    <div className="success-button-container">
+                      <button className="success-button-main" type="button">
+                        2021-2022 &#x1FAAB;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="about-box">
+          <div className="f2">
+            <h3 id="formacion">02. Formación</h3>
+            <div className="notifications-container">
+              <div className="success">
+                <div className="flex">
+                  <div className="success-prompt-wrap">
+                    <p className="success-prompt-heading2">
                       {" "}
-                      PHP, JavaScript, SQL, HTML y CSS
-                    </span>
-                    .
-                  </p>
-                </li>
-              </ul>
+                      &#127891; CFGS Desarrollo de Aplicaciones Web (DAW) -
+                      <span className="success-prompt-prompt2 titulacion">
+                      &nbsp;IES Marqués de Comares (Lucena, Córdoba) &#128205;
+                      </span>
+                    </p>
+                    <div className="success-button-container">
+                      <button className="success-button-main" type="button">
+                        2019-2021
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr className="separador-about" />
-          </div>
-        </div>
-        <div className="about-box">
-          <div className="f2">
-            <h3 id="formacion">03. Formación</h3>
-            <div className="ijo">
-              <ul>
-                <li>
-                  <p>
-                    <strong>
-                      <span className="titulacion">
-                        2019-2021. CFGS en Desarrollo de Aplicaciones Web (DAW)
-                      </span>{" "}
-                    </strong>{" "}
-                    por el{" "}
-                    <span className="titulacion">
-                      IES Marqués de Comares (Lucena, Córdoba).
-                    </span>
-                    &nbsp;
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>
-                      <span className="titulacion">
-                        2014-2015. Máster en Desarrollo Territorial Sostenible
-                      </span>{" "}
-                    </strong>{" "}
-                    por la <span className="titulacion">UAM.</span>&nbsp;
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>
-                      <span className="titulacion">
-                        2008-2013. Licenciado en Geografía{" "}
-                      </span>{" "}
-                    </strong>{" "}
-                    por la <span className="titulacion">UMA.</span>&nbsp;
-                  </p>
-                </li>
-              </ul>
-              <p>
-                La tecnología forma parte de mi vida no sólo en el ámbito
-                laboral, sino que también la aplico para tener una continua
-                formación y actualización para proyectos personales o por
-                petición externa.
-              </p>
+            <br />
+            <div className="notifications-container">
+              <div className="success">
+                <div className="flex">
+                  <div className="success-prompt-wrap">
+                    <p className="success-prompt-heading2">
+                      {" "}
+                      &#127891; Máster Desarrollo Territorial Sostenible -
+                      <span className="success-prompt-prompt2 titulacion">
+                        &nbsp;Universidad Autónoma de Madrid &#128205;
+                      </span>
+                    </p>
+                    <div className="success-button-container">
+                      <button className="success-button-main">2014-2015</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr className="separador-about" />
+            <br />
+            <div className="notifications-container">
+              <div className="success">
+                <div className="flex">
+                  <div className="success-prompt-wrap">
+                    <p className="success-prompt-heading2">
+                      {" "}
+                      &#127891; Licenciatura en Geografía -
+                      <span className="success-prompt-prompt2 titulacion">
+                        &nbsp;Universidad de Málaga &#128205;
+                      </span>
+                    </p>
+                    <div className="success-button-container">
+                      <button className="success-button-main" type="button">
+                        2008-2013
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="about-box2">
           <div className="f2">
-            <h3 id="skills">04. Habilidades/Conocimientos generales</h3>
+            <h3 id="skills">03. Habilidades/Conocimientos generales</h3>
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/html.png" alt="html" className="midu"/>
+                  <img src="/images/html.png" alt="html" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/css.png" alt="css" className="midu"/>
+                  <img src="/images/css.png" alt="css" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/js.png" alt="js" className="midu"/>
+                  <img src="/images/js.png" alt="js" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/node1.png" alt="node" className="midu"/>
+                  <img src="/images/node1.png" alt="node" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/postman.png" alt="node" className="midu"/>
+                  <img src="/images/postman.png" alt="node" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/java.png" alt="java" className="midu"/>
+                  <img src="/images/java.png" alt="java" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/php1.png" alt="php" className="midu"/>
+                  <img src="/images/php1.png" alt="php" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/selenium1.png" alt="selenium" className="midu"/>
+                  <img
+                    src="/images/selenium1.png"
+                    alt="selenium"
+                    className="midu"
+                  />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/appium.png" alt="appium" className="midu"/>
+                  <img src="/images/appium.png" alt="appium" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/sql.png" alt="sql" className="midu"/>
+                  <img src="/images/sql.png" alt="sql" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/mongodb1.png" alt="mongo" className="midu"/>
+                  <img
+                    src="/images/mongodb1.png"
+                    alt="mongo"
+                    className="midu"
+                  />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/git.png" alt="git" className="midu"/>
+                  <img src="/images/git.png" alt="git" className="midu" />
                 </div>
               </div>
             </section>
-            <hr className="separador-about" />
           </div>
         </div>
         <div className="about-box2">
           <div className="f2">
-            <h3 id="skills">05. Habilidades/Frameworks y Librerías</h3>
+            <h3 id="skills">04. Habilidades/Frameworks y Librerías</h3>
             <section className="experiencia-container">
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/react1.png" alt="react" className="midu"/>
+                  <img src="/images/react1.png" alt="react" className="midu" />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/angular1.png" alt="angular" className="midu"/>
+                  <img
+                    src="/images/angular1.png"
+                    alt="angular"
+                    className="midu"
+                  />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/spring.png" alt="spring " className="midu"/>
+                  <img
+                    src="/images/spring.png"
+                    alt="spring "
+                    className="midu"
+                  />
                 </div>
               </div>
               <div className="exp-box">
                 <div className="item-mask2">
-                  <img src="/images/laravel1.png" alt="spring " className="midu"/>
+                  <img
+                    src="/images/laravel1.png"
+                    alt="spring "
+                    className="midu"
+                  />
                 </div>
               </div>
             </section>
