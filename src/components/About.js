@@ -145,7 +145,7 @@ export const About = () => {
                             to="https://lleego.com/"
                             target="_blank"
                           >
-                            Lleego Travel Market
+                            Lleego Travel Market,
                           </Link>
                         </strong>
                         &nbsp;enfocado en garantizar la calidad del software

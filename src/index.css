@@ -10,6 +10,75 @@ body {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
+/* From Uiverse.io by mohamedkhire */ 
+.cardzz::before {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  top: 20%;
+}
+
+.cardzz::before,
+.cardzz::after {
+  content: "";
+  background-color: #fff9e7;
+  position: absolute;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.qatext{
+  margin-bottom: 29px;
+}
+
+.linkservices{
+  text-decoration: none;
+}
+.cardz .red,
+.cardz .blue,
+.cardz .green {
+  width: 250px;
+  height: 160px;
+  backdrop-filter: blur(30px);
+  background-color: #f5f5f5;
+  border: 1px solid rgba(144, 161, 255, 0.171);
+}
+
+.cardz img{
+  margin-top: 20px;
+  margin-bottom: -8px;
+}
+
+.cardz .cardzz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cardz .cardzz p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cardz .cardzz p.second-text {
+  font-size: 0.7em;
+}
+
+.cardz .cardzz:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cardz:hover > .cardzz:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}
+
+
 /* From Uiverse.io by Codecite */ 
 .cvAnimation{
   margin-top: 25px;
@@ -258,7 +327,7 @@ h2 .name {
   flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 100px;
-  gap: 30px; /*Con gap damos una separación entre los items más correcta*/
+  gap: 50px; /*Con gap damos una separación entre los items más correcta*/
 }
 
 .card {
@@ -440,6 +509,7 @@ h2 .name {
 .titulo-boxs1,
 .titulo-boxs2,
 .notifications-container,
+.cardz,
 .titulo-proyects,
 .texto-servicios2{
   animation-timeline: view();
