@@ -64,27 +64,6 @@ export const Inicio = () => {
           </div>
         </Link>
       </div>
-
-      <article className="cards">
-        <div className="card">
-          <Link to="/servicios/daw">
-            <span className="material-symbols-rounded">laptop_chromebook</span>
-            <span className="texto-box1">Desarrollo Web</span>
-          </Link>
-        </div>
-        <div className="card">
-          <Link to="/servicios/auto">
-            <span className="material-symbols-outlined">play_circle</span>
-            <span className="texto-box3">Automatización</span>
-          </Link>
-        </div>
-        <div className="card">
-          <Link to="/servicios/qa">
-            <span className="material-symbols-outlined">mobile_friendly</span>
-            <span className="texto-box2">QA</span>
-          </Link>
-        </div>
-      </article>
       <h2 className="titulo-boxs2">Experiencia profesional</h2>
       <section className="experiencia-container">
         <div className="exp-box">
