@@ -6,38 +6,73 @@ export const Servicios = () => {
   const { id } = useParams();
   
   useEffect(() => {
+    const ORIGINAL_COLOR = ""; // puedes usar el color original si no es heredado
+    let highlightTimeout;
+    let scrollListenerTimeout;
+    let target = null;
+  
     switch(id){
       case "daw":
-      const section1 = document.querySelector('#daw');
+        const section1 = document.querySelector('#daw');
+        target = section1;
         window.scrollTo({
-        top: section1.offsetTop,
-        behavior: 'smooth',
+          top: section1.offsetTop,
+          behavior: 'smooth',
         });
-      document.getElementById("daw").style.color = "#ab8616";
-      break;
-
+        highlightTimeout = setTimeout(() => {
+          section1.style.color = "#ab8616";
+        }, 300);
+        break;
+  
       case "qa":
-      const section2 = document.querySelector('#qa');
+        const section2 = document.querySelector('#qa');
+        target = section2;
         window.scrollTo({
-        top: section2.offsetTop,
-        behavior: 'smooth',
+          top: section2.offsetTop,
+          behavior: 'smooth',
         });
-      document.getElementById("qa").style.color = "#ab8616";
-      break;
-
+        highlightTimeout = setTimeout(() => {
+          section2.style.color = "#ab8616";
+        }, 300);
+        break;
+  
       case "auto":
-      const section3 = document.querySelector('#auto');
+        const section3 = document.querySelector('#auto');
+        target = section3;
         window.scrollTo({
-        top: section3.offsetTop,
-        behavior: 'smooth',
+          top: section3.offsetTop,
+          behavior: 'smooth',
         });
-      document.getElementById("auto").style.color = "#ab8616";
-      break;
-
+        highlightTimeout = setTimeout(() => {
+          section3.style.color = "#ab8616";
+        }, 300);
+        break;
+  
       default:
+        break;
     }
-    
+  
+    // Añadir el listener después de un pequeño delay
+    scrollListenerTimeout = setTimeout(() => {
+      const handleScroll = () => {
+        if (target) {
+          target.style.color = ORIGINAL_COLOR;
+        }
+        window.removeEventListener('scroll', handleScroll);
+      };
+  
+      window.addEventListener('scroll', handleScroll, { passive: true });
+    }, 800);
+  
+    // Limpieza
+    return () => {
+      clearTimeout(highlightTimeout);
+      clearTimeout(scrollListenerTimeout);
+      // No usamos función anónima aquí para eliminar el listener correctamente
+      window.removeEventListener('scroll', () => {});
+    };
   }, [id]);
+  
   //código con el cual hemos conseguido anclar enlaces desde otra página
 
   const handleClickArrow = (e) => {
@@ -48,53 +83,9 @@ export const Servicios = () => {
     });
   };
 
-  const handleClickDaw = (e) => {
-    const section = document.querySelector('#daw');
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth',
-    });
-
-    document.getElementById("daw").style.color = "#ab8616";
-    document.getElementById("qa").style.color = "";
-    document.getElementById("auto").style.color = "";
-  };
-
-  const handleClickQa = (e) => {
-    const section = document.querySelector('#qa');
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth',
-    });
-
-    document.getElementById("daw").style.color = "";
-    document.getElementById("qa").style.color = "#ab8616";
-    document.getElementById("auto").style.color = "";
-  };
-
-  const handleClickAuto = (e) => {
-    const section = document.querySelector('#auto');
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth',
-    });
-
-    document.getElementById("daw").style.color = "";
-    document.getElementById("qa").style.color = "";
-    document.getElementById("auto").style.color = "#ab8616";
-  };
-
   return (
     <>
       <section id="servicios-container" className="servicios-container">
-        <div className="servicio-div-texto">
-          <ul className="servicio-list">
-              <li className="texto-servicio-list1"><Link onClick={(e) =>handleClickDaw(e)} to="#daw"><span className="material-symbols-rounded">laptop_chromebook</span></Link></li>
-              <li className="texto-servicio-list2"><Link onClick={(e) =>handleClickQa(e)} to="#qa"><span className="material-symbols-outlined">mobile_friendly</span></Link></li>
-              <li className="texto-servicio-list3"><Link onClick={(e) =>handleClickAuto(e)} to="#auto"><span className="material-symbols-outlined">play_circle</span></Link></li>
-          </ul>
-          <hr className="separador-about2"/>
-        </div>
           <div className="servicio-div-texto2">
             <h3 id="daw">Desarrollo Web</h3> 
             <p className="texto-servicios2">
