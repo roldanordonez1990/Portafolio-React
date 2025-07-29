@@ -6,37 +6,57 @@ export const About = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    switch (id) {
-      case "hostgreen":
-        const section1 = document.getElementById("hostgreen");
-        window.scrollTo({
-          top: section1.offsetTop,
-          behavior: "smooth",
-        });
-        document.getElementById("hostgreen").style.color = "#ab8616";
-        break;
+    const HIGHLIGHT_COLOR_MAP = {
+      hostgreen: "#eaffed",
+      nttdata: "#eaffed",
+      lleego: "#eaffed",
+    };
 
-      case "nttdata":
-        const section2 = document.getElementById("nttdata");
-        window.scrollTo({
-          top: section2.offsetTop,
-          behavior: "smooth",
-        });
-        document.getElementById("nttdata").style.color = "#ab8616";
-        break;
+    const ORIGINAL_BG = "#f5f5f5";
+    const section = document.getElementById(id);
+    const className =
+      id === "hostgreen"
+        ? "success3"
+        : id === "nttdata"
+        ? "success2"
+        : id === "lleego"
+        ? "success1"
+        : null;
 
-      case "lleego":
-        const section3 = document.getElementById("lleego");
-        window.scrollTo({
-          top: section3.offsetTop,
-          behavior: "smooth",
-        });
-        document.getElementById("lleego").style.color = "#ab8616";
-        break;
+    if (section && className) {
+      const target = document.querySelector(`.${className}`);
+      if (!target) return;
 
-      default:
+      // Hacer scroll automático
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+
+      // Aplicar color después de un pequeño delay
+      const highlightTimeout = setTimeout(() => {
+        target.style.backgroundColor = HIGHLIGHT_COLOR_MAP[id];
+      }, 300); // puedes ajustar el tiempo
+
+      // Añadir el listener después de otro delay, asegurando que el scroll automático haya terminado
+      const scrollListenerTimeout = setTimeout(() => {
+        const handleUserScroll = () => {
+          target.style.backgroundColor = ORIGINAL_BG;
+          window.removeEventListener("scroll", handleUserScroll);
+        };
+
+        window.addEventListener("scroll", handleUserScroll, { passive: true });
+      }, 800); // espera un poco más que el highlightTimeout
+
+      // Limpieza
+      return () => {
+        clearTimeout(highlightTimeout);
+        clearTimeout(scrollListenerTimeout);
+        window.removeEventListener("scroll", () => {});
+      };
     }
   }, [id]);
+
   //código con el cual hemos conseguido anclar enlaces desde otra página
 
   const handleClickArrow = (e) => {
@@ -125,9 +145,9 @@ export const About = () => {
         <div className="about-box">
           <div className="f2">
             <h3 id="experiencia">01. Experiencia en el sector IT</h3>
-
+            <span id="lleego"></span>
             <div className="notifications-container">
-              <div className="success">
+              <div className="success1" id="lleego">
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading">
@@ -138,7 +158,7 @@ export const About = () => {
                         <span className="titulacion">
                           QA Automation Engineer
                         </span>{" "}
-                        en proyecto del sector turístico&nbsp;
+                        para el proyecto&nbsp;
                         <strong>
                           <Link
                             className="icon2 titulacion"
@@ -163,9 +183,10 @@ export const About = () => {
                 </div>
               </div>
             </div>
+            <span id="nttdata"></span>
             <br />
             <div className="notifications-container">
-              <div className="success">
+              <div className="success2" id="nttdata">
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading">&#x1F4BB; NTT DATA</p>
@@ -202,9 +223,10 @@ export const About = () => {
                 </div>
               </div>
             </div>
+            <span id="hostgreen"></span>
             <br />
             <div className="notifications-container">
-              <div className="success">
+              <div className="success3" id="hostgreen">
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading">
@@ -249,14 +271,15 @@ export const About = () => {
           <div className="f2">
             <h3 id="formacion">02. Formación</h3>
             <div className="notifications-container">
-              <div className="success">
+              <div className="success1">
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading2">
                       {" "}
-                      &#127891; CFGS Desarrollo de Aplicaciones Web (DAW) -
+                      &#127891; CFGS Desarrollo de Aplicaciones Web (DAW){" "}
+                      <span className="spaceFormation">-</span>
                       <span className="success-prompt-prompt2 titulacion">
-                      &nbsp;IES Marqués de Comares (Lucena, Córdoba) &#128205;
+                        &#128205;IES Marqués de Comares (Lucena, Córdoba)
                       </span>
                     </p>
                     <div className="success-button-container">
@@ -270,14 +293,15 @@ export const About = () => {
             </div>
             <br />
             <div className="notifications-container">
-              <div className="success">
+              <div className="success1">
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading2">
                       {" "}
-                      &#127891; Máster Desarrollo Territorial Sostenible -
+                      &#127891; Máster Desarrollo Territorial Sostenible{" "}
+                      <span className="spaceFormation">-</span>
                       <span className="success-prompt-prompt2 titulacion">
-                        &nbsp;Universidad Autónoma de Madrid &#128205;
+                        &#128205;Universidad Autónoma de Madrid
                       </span>
                     </p>
                     <div className="success-button-container">
@@ -289,14 +313,15 @@ export const About = () => {
             </div>
             <br />
             <div className="notifications-container">
-              <div className="success">
+              <div className="success1">
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading2">
                       {" "}
-                      &#127891; Licenciatura en Geografía -
+                      &#127891; Licenciatura en Geografía{" "}
+                      <span className="spaceFormation">-</span>
                       <span className="success-prompt-prompt2 titulacion">
-                        &nbsp;Universidad de Málaga &#128205;
+                        &#128205;Universidad de Málaga
                       </span>
                     </p>
                     <div className="success-button-container">
