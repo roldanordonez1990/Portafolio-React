@@ -151,7 +151,13 @@ export const About = () => {
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading">
-                      &#x1F4BB; Lleego Travel Market
+                    <a
+                        href="https://www.lleego.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        &#x1F4BB; Lleego
+                      </a>
                     </p>
                     <div className="success-prompt-prompt">
                       <p>
@@ -189,7 +195,15 @@ export const About = () => {
               <div className="success2" id="nttdata">
                 <div className="flex">
                   <div className="success-prompt-wrap">
-                    <p className="success-prompt-heading">&#x1F4BB; NTT DATA</p>
+                    <p className="success-prompt-heading">
+                      <a
+                        href="https://www.nttdata.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        &#x1F4BB; NTT DATA
+                      </a>
+                    </p>
                     <div className="success-prompt-prompt">
                       <p>
                         <span className="titulacion">
@@ -230,7 +244,13 @@ export const About = () => {
                 <div className="flex">
                   <div className="success-prompt-wrap">
                     <p className="success-prompt-heading">
-                      &#x1F4BB; Hostgreen
+                      <a
+                        href="https://www.hostgreen.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        &#x1F4BB; Hostgreen
+                      </a>
                     </p>
                     <div className="success-prompt-prompt">
                       <p>

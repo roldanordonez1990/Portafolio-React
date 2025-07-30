@@ -19,8 +19,8 @@ export const Contacto = () => {
           </p>
           <p className="p-correo">
             <span className="correo-personal">roldanordonez.francisco@gmail.com</span>
-              <div className="correo-personal1">
-                <span className="material-symbols-outlined">mail</span>
+              <div className="correo-personal1-email">
+                <img alt="logo" src="/images/correo-electronico.png" />
               </div>
           </p>
           <div className="div-linkedin">
